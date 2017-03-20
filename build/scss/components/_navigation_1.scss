@@ -1,118 +1,207 @@
-// Navigation Mobile First
-.flex-nav {
-    display: flex;
-    background-color: white;
-    // set to relative for positioned absolute .open class
-    position: relative;
-    .logo-placeholder {
-        align-items: center;
-        padding: 20px;
-        font-size: 28px;
-        // minimum baseline for the flex-nav parent
-        flex: 1;
-    }
-    .ul-container {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: none;
-        // flex-direction: column;
-        text-align: center;
-        flex-wrap: wrap;
-        li {
-            // single column on mobile screen 
-            flex-basis: 100%;
-            padding: 20px;
-            &:hover {
-                transition: all .4s;
-                background-color: #dadada;
-            }
-            a {
-                color: #000;
-            }
-        }
-        .social {
-            // comment - defaults to 4 columns 
-            flex: 1;
-            // uncomment for single column
-            // flex: 1 1 100%;
-        }
-    }
-}
-
-// open nav animation
-.flex-nav {
-    .open {
-        display: flex;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        transition: .2s all;
-        li {
-            cursor: pointer;
-            background-color: #fff;
-            &:hover {
-                transition: all .4s;
-                background-color: #dadada;
-            }
-        }
-    }
-}
-
-// button style
-.toggleNav {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    font-size: 22px;
-    padding: 20px;
-    cursor: pointer;
-    align-items: center;
-    &:hover {
-        transition: all .4s;
-        background-color: #dadada;
-    }
-}
-
-// Medium Sized Devices
-// @include breakpoint-640-sm {
-//     .flex-nav {
-//         .ul-container {
-//             li {
-//                 flex: 1 1 50%;
+// // Variables
+// // 1A2D47 Dark Blue
+// // 44474C Dark Gray
+// // 414244 Darker Gray
+// // 2C2D2F Darkest Gray/Black
+// // Navigation Mobile First
+// svg {
+//     height: 100px;
+// }
+// nav {
+//     background-color: $navbar-bg;
+// }
+// .flex-nav-container {
+//     display: flex;
+//     // set to relative for positioned absolute .open class
+//     position: relative;
+//     font-family: $nav-fonts;
+//     .logo-placeholder {
+//         align-items: center;
+//         padding: 10px;
+//         font-size: 28px;
+//         // minimum baseline for the flex-nav parent
+//         flex: 1;
+//         text-align: left;
+//     }
+//     .ul-container {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         display: none;
+//         // flex-direction: column;
+//         text-align: left;
+//         flex-wrap: wrap;
+//         li {
+//             // single column on mobile screen 
+//             flex-basis: 100%;
+//             padding: 20px;
+//             a {
+//                 color: $link-color;
+//                 &:hover {
+//                     color: $link-hover;
+//                 }
+//                 .fa-chevron-down:before {
+//                     margin-left: 4px;
+//                 }
 //             }
-//             .social {
-//                 flex: 1 1 25%;
-//             }
+//         }
+//         .social {
+//             // comment - defaults to 4 columns 
+//             flex: 1;
+//             // uncomment for single column
+//             // flex: 1 1 100%;
 //         }
 //     }
 // }
-// Desktop
-@include breakpoint-1200-sm {
-    //logo on small screens
-    .flex-nav {
-        // display: flex;
-        .ul-container {
-            list-style: none;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: flex-end;
-            // specifies the length of the ul that want's to contain the flex-nav parent
-            flex: 4;
-            li {
-                flex: 3;
-                padding: 30px 0;
-            }
-            .social {
-                flex: 1;
+// // open nav animation
+// .flex-nav-container {
+//     .open {
+//         display: flex;
+//         position: absolute;
+//         top: 100%;
+//         right: 0;
+//         left: 0;
+//         bottom: 0;
+//         transition: .2s all;
+//         li {
+//             cursor: pointer;
+//             background-color: $mobile-ul-color;
+//         }
+//     }
+// }
+// // button style
+// .toggleNav {
+//     display: flex;
+//     justify-content: center;
+//     margin: 0 auto;
+//     font-size: 22px;
+//     padding: 20px;
+//     cursor: pointer;
+//     align-items: center;
+//     color: white;
+//     &:hover {
+//         transition: all .4s;
+//     }
+// }
+// // Desktop
+// @include breakpoint-1200-sm {
+//     //logo on small screens
+//     .flex-nav-container {
+//         // display: flex;
+//         .logo-placeholder {
+//             text-align: center;
+//         }
+//         max-width: 1400px;
+//         margin: 0 auto;
+//         .ul-container {
+//             list-style: none;
+//             align-items: center;
+//             margin: 0;
+//             padding: 0;
+//             display: flex;
+//             justify-content: flex-end;
+//             text-align: center;
+//             // specifies the length of the ul that want's to contain the flex-nav parent
+//             flex: 4;
+//             li {
+//                 flex: 3;
+//                 padding: 20px 0;
+//             }
+//             .social {
+//                 flex: 1;
+//             }
+//         }
+//     }
+//     .toggleNav {
+//         display: none;
+//     }
+// }
+.has-children {
+    ul {
+        display: none;
+        li {
+            a {
+                display: block;
+                color: #fff;
             }
         }
     }
-    .toggleNav {
-        display: none;
+}
+
+nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: $navbar-bg;
+    ul {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        li {
+            a {
+                padding: .8rem .8rem;
+                display: block;
+                color: #f9f9f9;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+// Desktop
+@include breakpoint-1200-sm {
+    nav {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    nav {
+        ul {
+            padding: 1rem;
+        }
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            position: relative;
+            flex: 1 0 auto;
+            text-align: center;
+            a {
+                padding: .8rem 1rem;
+                display: block;
+                color: #f9f9f9;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .has-children {
+        ul {
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            background-color: #21395B;
+            li {
+                width: 100%;
+                a {
+                    padding: 1rem;
+                    display: block;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // sub menu selector
+    nav ul li:hover ul {
+        display: flex;
+        flex-direction: column;
     }
 }
