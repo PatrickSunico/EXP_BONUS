@@ -2,7 +2,13 @@
   <div class="flex-nav-container">
     <span class="logo-placeholder">
       <a href="#">
-        <?php include('includes/components/svg_logo.php');?>
+        <span class="logo-lg">
+          <?php include('includes/components/svg_logo_lg.php');?>
+        </span>
+        <span class="logo-sm">
+            <?php include('includes/components/svg_logo_sm.php');?>
+        </span>
+
       </a>
     </span>
     <div class="toggleNav">

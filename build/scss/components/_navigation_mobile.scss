@@ -1,7 +1,10 @@
 // Navigation Mobile First
-svg {
-    height: 80px;
-    display: flex;
+.class-sm {
+    svg {
+        height: 60px;
+        display: flex;
+        text-align: center;
+    }
 }
 
 nav {
@@ -14,13 +17,24 @@ nav {
     position: relative;
     font-family: $nav-fonts;
     align-items: center;
+    padding: 0 20px;
     .logo-placeholder {
         display: flex;
         align-items: center;
         font-size: 28px;
+        justify-content: flex-start;
         // minimum baseline for the flex-nav parent
         flex: 1;
-        padding: 10px 0;
+        // switch logos
+        .logo-sm {
+            svg {
+                height: 100px;
+                display: flex;
+            }
+        }
+        .logo-lg {
+            display: none;
+        }
     }
     .ul-container {
         list-style: none;
@@ -117,10 +131,9 @@ nav ul li:hover ul {
     align-items: center;
     color: white;
     height: 20px;
-    margin: 0 2rem;
     &:hover {
+        color: $link-hover;
         transition: $nav_transitions;
-        background-color: #23426f;
     }
 }
 
@@ -129,9 +142,22 @@ nav ul li:hover ul {
 @include breakpoint-1200-sm {
     //logo on small screens
     .flex-nav-container {
-        // display: flex;
         max-width: 1400px;
         margin: 0 auto;
+        .logo-placeholder {
+            justify-content: center;
+            padding: 10px 0;
+            // switch logos
+            .logo-lg {
+                display: flex;
+                svg {
+                    height: 100px;
+                }
+            }
+            .logo-sm {
+                display: none;
+            }
+        }
         .ul-container {
             list-style: none;
             align-items: center;
@@ -146,7 +172,7 @@ nav ul li:hover ul {
                 flex: 3;
                 a.primary-menu {
                     display: block;
-                    padding: 2.4rem 0;
+                    padding: 3rem 0;
                     &:hover {
                         background-color: $nav_dropdown_normal;
                         color: white;
