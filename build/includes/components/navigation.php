@@ -8,7 +8,6 @@
         <span class="logo-sm">
             <?php include('includes/components/svg_logo_sm.php');?>
         </span>
-
       </a>
     </span>
     <div class="toggleNav">

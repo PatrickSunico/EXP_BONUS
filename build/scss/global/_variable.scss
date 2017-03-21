@@ -1,3 +1,4 @@
+// Navbar Variables
 $navbar-bg: #21395B;
 $link-hover: #CDC6C6;
 $link-color: #fff;
@@ -5,4 +6,11 @@ $nav-fonts: 'Avenir LT Std';
 $mobile-ul-color: #394656;
 $nav_dropdown_normal: #294873;
 $nav_dropdown_hover: #1a2d47;
-$nav_transitions: all .8s ease;
+$nav_transitions: all .4s ease-in-out;
+$ease_squeeze: all 0.4s ease-in-out;
+// Search Form Variables
+$search-form: #44474C;
+$search_hover: #606469;
+// Carousel
+$carousel-bg: #414244;
+$carousel-item-bg: #484C53;

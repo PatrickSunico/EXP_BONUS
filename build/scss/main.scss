@@ -8,4 +8,10 @@
 // @import 'vendor/bourbon/bourbon';
 // @import 'mixins/animations';
 // Partials 
+// Navbar
 @import 'components/navigation_mobile';
+@import 'components/navigation_desktop';
+// Search
+@import 'components/search';
+// Carousel
+@import 'components/main_carousel';

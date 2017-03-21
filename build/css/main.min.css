@@ -188,6 +188,8 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .flex-nav-container .logo-placeholder {
@@ -270,8 +272,8 @@ nav {
 }
 
 .has-children ul li a.sub-menu:hover {
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: #1a2d47;
 }
 
@@ -298,8 +300,8 @@ nav ul li:hover ul {
   right: 0;
   left: 0;
   bottom: 0;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .flex-nav-container .open li {
@@ -309,8 +311,8 @@ nav ul li:hover ul {
 }
 
 .flex-nav-container .open li a.primary-menu:hover {
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: #1a2d47;
 }
 
@@ -330,14 +332,17 @@ nav ul li:hover ul {
 
 .toggleNav:hover {
   color: #CDC6C6;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media only screen and (min-width: 1200px) {
   .flex-nav-container {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   .flex-nav-container .logo-placeholder {
     -webkit-box-pack: center;
@@ -388,8 +393,8 @@ nav ul li:hover ul {
   .flex-nav-container .ul-container li a.primary-menu:hover {
     background-color: #294873;
     color: white;
-    -webkit-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   .flex-nav-container .ul-container .social {
     -webkit-box-flex: 1;
@@ -402,6 +407,7 @@ nav ul li:hover ul {
   .has-children ul {
     display: none;
     position: absolute;
+    z-index: 2;
     top: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -421,8 +427,8 @@ nav ul li:hover ul {
     color: #fff;
   }
   .has-children ul li a.sub-menu:hover {
-    -webkit-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     color: #CDC6C6;
     background-color: #294873;
   }
@@ -435,4 +441,89 @@ nav ul li:hover ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.form-wrapper {
+  width: 100%;
+  background-color: #44474C;
+  font-family: "Avenir LT Std";
+}
+
+.form-wrapper form .search_textbox {
+  background-image: url(../images/search.png);
+  background-size: 20px;
+  background-position: 30px 20px;
+  background-repeat: no-repeat;
+  color: black;
+  height: 30px;
+  padding-left: 60px;
+  background-color: #44474C;
+  height: 60px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.form-wrapper form .search_textbox:hover {
+  background-color: #606469;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (min-width: 1200px) {
+  .form-wrapper {
+    width: 100%;
+    background-color: #44474C;
+    font-family: "Avenir LT Std";
+  }
+  .form-wrapper form {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .form-wrapper form .search_textbox {
+    background-position: 30px 17px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    height: 30px;
+    padding-left: 90px;
+    height: 60px;
+    font-size: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .form-wrapper form .search_textbox:hover {
+    background-color: #606469;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+#carousel-bg {
+  max-width: 100%;
+  background-color: #414244;
+}
+
+.carousel-wrapper {
+  background-color: #484C53;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.carousel-wrapper .nw-media-object .object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.carousel-wrapper .nw-media-object .object img {
+  margin: 0 auto;
+  height: 400px;
 }
