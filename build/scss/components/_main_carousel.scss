@@ -13,7 +13,10 @@
             flex-direction: row;
             img {
                 margin: 0 auto;
-                height: 400px;
+                flex: 1;
+            }
+            .media-body {
+                flex: 1;
             }
         }
     }
