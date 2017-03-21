@@ -183,6 +183,9 @@ nav {
   display: flex;
   position: relative;
   font-family: "Avenir LT Std";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-nav-container .logo-placeholder {
@@ -214,23 +217,24 @@ nav {
       flex-basis: 100%;
 }
 
-.flex-nav-container .ul-container li a {
+.flex-nav-container .ul-container li a.primary-menu {
   color: #fff;
   display: block;
-  padding: 0;
+  padding: 2rem 1rem;
 }
 
-.flex-nav-container .ul-container li a .fa:before {
+.flex-nav-container .ul-container li a.primary-menu .fa:before {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.flex-nav-container .ul-container li a .icon-account {
+.flex-nav-container .ul-container li a.primary-menu .icon-account {
   margin-right: 10px;
 }
 
-.flex-nav-container .ul-container li a:hover {
+.flex-nav-container .ul-container li a.primary-menu:hover {
   color: #CDC6C6;
+  background-color: #1a2d47;
 }
 
 .flex-nav-container .ul-container .social {
@@ -244,12 +248,16 @@ nav {
   display: none;
 }
 
-.has-children ul li {
-  padding-left: 20px;
+.has-children ul li a.sub-menu {
+  color: #fff;
+  display: block;
+  padding: 2rem 3rem;
 }
 
-.has-children ul li a {
-  display: block;
+.has-children ul li a.sub-menu:hover {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  background-color: #1a2d47;
 }
 
 nav ul li:hover ul {
@@ -275,8 +283,8 @@ nav ul li:hover ul {
   right: 0;
   left: 0;
   bottom: 0;
-  -webkit-transition: .2s all;
-  transition: .2s all;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .flex-nav-container .open li {
@@ -285,9 +293,9 @@ nav ul li:hover ul {
   text-align: left;
 }
 
-.flex-nav-container .open li:hover {
-  -webkit-transition: all .8s;
-  transition: all .8s;
+.flex-nav-container .open li a.primary-menu:hover {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   background-color: #1a2d47;
 }
 
@@ -295,22 +303,20 @@ nav ul li:hover ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 auto;
   font-size: 22px;
-  padding: 20px;
   cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  height: 20px;
+  margin: 0 2rem;
 }
 
 .toggleNav:hover {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   background-color: #23426f;
 }
 
@@ -344,15 +350,15 @@ nav ul li:hover ul {
         -ms-flex: 3;
             flex: 3;
   }
-  .flex-nav-container .ul-container li a {
+  .flex-nav-container .ul-container li a.primary-menu {
     display: block;
-    padding: 0;
+    padding: 2.4rem 0;
   }
-  .flex-nav-container .ul-container li a:hover {
+  .flex-nav-container .ul-container li a.primary-menu:hover {
     background-color: #294873;
     color: white;
-    -webkit-transition: all .8s;
-    transition: all .8s;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
   }
   .flex-nav-container .ul-container .social {
     -webkit-box-flex: 1;
@@ -378,15 +384,16 @@ nav ul li:hover ul {
     width: 100%;
     padding: 0;
   }
-  .has-children ul li .sub-menu {
-    padding: 2rem 0;
-  }
-  .has-children ul li a {
+  .has-children ul li a.sub-menu {
     display: block;
+    padding: 1rem 0;
     color: #fff;
   }
-  .has-children ul li a:hover {
+  .has-children ul li a.sub-menu:hover {
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
     color: #CDC6C6;
+    background-color: #294873;
   }
   nav ul li:hover ul {
     display: -webkit-box;

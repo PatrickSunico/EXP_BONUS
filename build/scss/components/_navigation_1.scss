@@ -13,6 +13,7 @@ nav {
     // set to relative for positioned absolute .open class
     position: relative;
     font-family: $nav-fonts;
+    align-items: center;
     .logo-placeholder {
         display: flex;
         align-items: center;
@@ -31,10 +32,10 @@ nav {
         li {
             // single column on mobile screen 
             flex-basis: 100%;
-            a {
+            a.primary-menu {
                 color: $link-color;
                 display: block;
-                padding: 0;
+                padding: 2rem 1rem;
                 .fa:before {
                     margin-left: 5px;
                     margin-right: 5px;
@@ -44,6 +45,7 @@ nav {
                 }
                 &:hover {
                     color: $link-hover;
+                    background-color: $nav_dropdown_hover;
                 }
             }
         }
@@ -62,9 +64,14 @@ nav {
     ul {
         display: none;
         li {
-            padding-left: 20px;
-            a {
+            a.sub-menu {
+                color: $link-color;
                 display: block;
+                padding: 2rem 3rem;
+                &:hover {
+                    transition: $nav_transitions;
+                    background-color: $nav_dropdown_hover;
+                }
             }
         }
     }
@@ -86,14 +93,16 @@ nav ul li:hover ul {
         right: 0;
         left: 0;
         bottom: 0;
-        transition: .2s all;
+        transition: $nav_transitions;
         li {
             cursor: pointer;
             background-color: $nav_dropdown_normal;
             text-align: left;
-            &:hover {
-                transition: all .8s;
-                background-color: $nav_dropdown_hover;
+            a.primary-menu {
+                &:hover {
+                    transition: $nav_transitions;
+                    background-color: $nav_dropdown_hover;
+                }
             }
         }
     }
@@ -102,15 +111,15 @@ nav ul li:hover ul {
 // button style
 .toggleNav {
     display: flex;
-    justify-content: center;
     margin: 0 auto;
     font-size: 22px;
-    padding: 20px;
     cursor: pointer;
     align-items: center;
     color: white;
+    height: 20px;
+    margin: 0 2rem;
     &:hover {
-        transition: all .4s;
+        transition: $nav_transitions;
         background-color: #23426f;
     }
 }
@@ -135,13 +144,13 @@ nav ul li:hover ul {
             li {
                 position: relative;
                 flex: 3;
-                a {
+                a.primary-menu {
                     display: block;
-                    padding: 0;
+                    padding: 2.4rem 0;
                     &:hover {
                         background-color: $nav_dropdown_normal;
                         color: white;
-                        transition: all .8s;
+                        transition: $nav_transitions;
                     }
                 }
             }
@@ -166,15 +175,14 @@ nav ul li:hover ul {
             li {
                 width: 100%;
                 padding: 0;
-                .sub-menu {
-                    padding: 2rem 0;
-                }
-                a {
+                a.sub-menu {
                     display: block;
-                    // padding: 2.4rem 0;
+                    padding: 1rem 0;
                     color: #fff;
                     &:hover {
+                        transition: $nav_transitions;
                         color: $link-hover;
+                        background-color: $nav_dropdown_normal;
                     }
                 }
             }
