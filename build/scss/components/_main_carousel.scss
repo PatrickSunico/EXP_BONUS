@@ -1,12 +1,7 @@
 #carousel-bg {
     max-width: 100%;
-    background-color: $carousel-bg;
-}
-
-.carousel-wrapper {
-    background-color: $carousel-item-bg;
-    max-width: 1400px;
     margin: 0 auto;
+<<<<<<< HEAD
     .nw-media-object {
         .object {
             display: flex;
@@ -18,10 +13,46 @@
             .media-body {
                 flex: 1;
             }
+=======
+    // height: 100%;
+    background-color: $carousel-bg;
+    .slider-for {
+        max-width: 100%;
+        margin: 0 auto;
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+>>>>>>> e4a5b6314ab4febd0e53faa1a3752c808c8d17d4
         }
     }
 }
 
+// .carousel-wrapper {
+//     background-color: $carousel-item-bg;
+//     max-width: 100%;
+//     height: auto;
+//     margin: 0 auto;
+//     .nw-media-object {
+//         .object {
+//             display: flex;
+//             flex-direction: row;
+//             img {
+//                 margin: 0 auto;
+//                 flex: 2;
+//                 max-width: 100%;
+//                 height: auto;
+//             }
+//             .media-body {
+//                 // display: flex;
+//                 position: absolute;
+//                 flex-direction: column;
+//                 flex: 1;
+//                 color: white;
+//                 margin: 20px;
+//             }
+//         }
+//     }
+// }
 // .nw-media-object {
 //     display: flex;
 //     flex-direction: row;

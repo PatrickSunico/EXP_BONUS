@@ -504,26 +504,16 @@ nav ul li:hover ul {
 
 #carousel-bg {
   max-width: 100%;
+  margin: 0 auto;
   background-color: #414244;
 }
 
-.carousel-wrapper {
-  background-color: #484C53;
-  max-width: 1400px;
+#carousel-bg .slider-for {
+  max-width: 100%;
   margin: 0 auto;
 }
 
-.carousel-wrapper .nw-media-object .object {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.carousel-wrapper .nw-media-object .object img {
+#carousel-bg .slider-for img {
+  max-width: 100%;
   margin: 0 auto;
-  height: 400px;
 }
