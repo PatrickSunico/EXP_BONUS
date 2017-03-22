@@ -1,86 +1,51 @@
-#carousel-bg {
-    max-width: 100%;
-    margin: 0 auto;
-<<<<<<< HEAD
-    .nw-media-object {
-        .object {
-            display: flex;
-            flex-direction: row;
-            img {
-                margin: 0 auto;
-                flex: 1;
-            }
-            .media-body {
-                flex: 1;
-            }
-=======
-    // height: 100%;
+#carousel-bg-container {
     background-color: $carousel-bg;
-    .slider-for {
+}
+
+.cycle-slideshow {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    img {
         max-width: 100%;
+        display: block;
         margin: 0 auto;
-        img {
-            max-width: 100%;
-            margin: 0 auto;
->>>>>>> e4a5b6314ab4febd0e53faa1a3752c808c8d17d4
+    }
+    .cycle-prev,
+    .cycle-next {
+        display: block;
+        position: absolute;
+        z-index: 999999;
+        cursor: pointer;
+        text-align: center;
+        top: 92%;
+        font-size: 200%;
+        color: white;
+    }
+    .cycle-prev {
+        left: 0;
+    }
+    .cycle-next {
+        right: 0;
+    }
+    .cycle-pager {
+        width: 100%;
+        max-width: 1400px;
+        text-align: center;
+        display: block;
+        position: relative;
+        bottom: 0;
+        z-index: 9999;
+        cursor: pointer;
+        background-color: $carousel-item-bg;
+        a {
+            display: inline-block;
+            // flex-direction: column;
+        }
+        .thumbnail {
+            width: 15%;
         }
     }
 }
-
-// .carousel-wrapper {
-//     background-color: $carousel-item-bg;
-//     max-width: 100%;
-//     height: auto;
-//     margin: 0 auto;
-//     .nw-media-object {
-//         .object {
-//             display: flex;
-//             flex-direction: row;
-//             img {
-//                 margin: 0 auto;
-//                 flex: 2;
-//                 max-width: 100%;
-//                 height: auto;
-//             }
-//             .media-body {
-//                 // display: flex;
-//                 position: absolute;
-//                 flex-direction: column;
-//                 flex: 1;
-//                 color: white;
-//                 margin: 20px;
-//             }
-//         }
-//     }
-// }
-// .nw-media-object {
-//     display: flex;
-//     flex-direction: row;
-//     flex-basis: 100%;
-//     .object {
-//         display: flex;
-//         flex-direction: row;
-//         margin: 0 auto;
-//         text-align: center;
-//         // justify-content: center;
-//         img {
-//             width: 100%;
-//             height: auto;
-//         }
-//         .media-body-flex {
-//             background-color: $carousel-item-bg;
-//             color: white;
-//             display: flex;
-//             flex-direction: row;
-//             flex: 1;
-//             .media-body {
-//                 position: absolute;
-//                 top: 0;
-//                 right: 0;
-//                 width: 50%;
-//                 height: auto;
-//                 background-color: $carousel-item-bg;
-//             }
-//         }
-//     }
-// }

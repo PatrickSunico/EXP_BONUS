@@ -7,8 +7,6 @@
         <title>Boilerplate</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" media="screen" title="no title">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/vendor/slick.css">
-        <link rel="stylesheet" href="/vendor/slick-theme.css">
         <link rel="stylesheet" href="/css/main.min.css">
 
   </head>

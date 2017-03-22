@@ -502,18 +502,60 @@ nav ul li:hover ul {
   }
 }
 
-#carousel-bg {
-  max-width: 100%;
-  margin: 0 auto;
+#carousel-bg-container {
   background-color: #414244;
 }
 
-#carousel-bg .slider-for {
+.cycle-slideshow {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.cycle-slideshow img {
   max-width: 100%;
+  display: block;
   margin: 0 auto;
 }
 
-#carousel-bg .slider-for img {
-  max-width: 100%;
-  margin: 0 auto;
+.cycle-slideshow .cycle-prev,
+.cycle-slideshow .cycle-next {
+  display: block;
+  position: absolute;
+  z-index: 999999;
+  cursor: pointer;
+  text-align: center;
+  top: 92%;
+  font-size: 200%;
+  color: white;
+}
+
+.cycle-slideshow .cycle-prev {
+  left: 0;
+}
+
+.cycle-slideshow .cycle-next {
+  right: 0;
+}
+
+.cycle-slideshow .cycle-pager {
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  display: block;
+  position: relative;
+  bottom: 0;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: #484C53;
+}
+
+.cycle-slideshow .cycle-pager a {
+  display: inline-block;
+}
+
+.cycle-slideshow .cycle-pager .thumbnail {
+  width: 15%;
 }
