@@ -4,16 +4,27 @@ $('document').ready(function() {
         $('.ul-container').toggleClass('open');
         e.preventDefault();
     });
-
-    // removes margin on every 2nd, 4th , 6th etc small-story container 
-    var story_small = $('.nw-story-small');
-    // var story_small = $('.nw-story-small').length;
-
-
-
 });
 
 $(window).on('resize', function() {
     // remove class on resize
     $('ul').removeClass('open');
 });
+
+var galleryTop = new Swiper('.gallery-top', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationType: 'progress',
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+    spaceBetween: 10,
+});
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    touchRatio: 0.2,
+    slideToClickedSlide: true
+});
+galleryTop.params.control = galleryThumbs;
+galleryThumbs.params.control = galleryTop;

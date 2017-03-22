@@ -502,60 +502,85 @@ nav ul li:hover ul {
   }
 }
 
-#carousel-bg-container {
+.carousel-wrapper {
   background-color: #414244;
 }
 
-.cycle-slideshow {
-  width: 100%;
-  max-width: 1400px;
+.swiper-container {
   margin: 0 auto;
-  display: block;
-  position: relative;
 }
 
-.cycle-slideshow img {
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.gallery-top img {
   max-width: 100%;
-  display: block;
   margin: 0 auto;
 }
 
-.cycle-slideshow .cycle-prev,
-.cycle-slideshow .cycle-next {
-  display: block;
-  position: absolute;
-  z-index: 999999;
-  cursor: pointer;
-  text-align: center;
-  top: 92%;
-  font-size: 200%;
-  color: white;
-}
-
-.cycle-slideshow .cycle-prev {
-  left: 0;
-}
-
-.cycle-slideshow .cycle-next {
-  right: 0;
-}
-
-.cycle-slideshow .cycle-pager {
-  width: 100%;
-  max-width: 1400px;
-  text-align: center;
-  display: block;
-  position: relative;
-  bottom: 0;
-  z-index: 9999;
-  cursor: pointer;
+.gallery-thumbs {
+  box-sizing: border-box;
+  padding: 10px 0;
   background-color: #484C53;
 }
 
-.cycle-slideshow .cycle-pager a {
-  display: inline-block;
+.gallery-thumbs img {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.cycle-slideshow .cycle-pager .thumbnail {
-  width: 15%;
+.gallery-thumbs .swiper-wrapper {
+  position: relative;
+  left: -32%;
+}
+
+.gallery-thumbs .swiper-wrapper .swiper-slide {
+  width: 40%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  .carousel-wrapper {
+    background-color: #414244;
+  }
+  .swiper-container {
+    margin: 0 auto;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  }
+  .gallery-top {
+    max-width: 1400px;
+  }
+  .gallery-top img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .gallery-thumbs {
+    box-sizing: border-box;
+    padding: 10px 0;
+    background-color: #484C53;
+  }
+  .gallery-thumbs img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .gallery-thumbs .swiper-wrapper {
+    position: relative;
+    left: -32%;
+  }
+  .gallery-thumbs .swiper-wrapper .swiper-slide {
+    width: 10%;
+    opacity: 0.4;
+  }
+  .gallery-thumbs .swiper-wrapper .swiper-slide-active {
+    opacity: 1;
+  }
 }

@@ -1,51 +1,80 @@
-#carousel-bg-container {
+.carousel-wrapper {
     background-color: $carousel-bg;
 }
 
-.cycle-slideshow {
-    width: 100%;
-    max-width: 1400px;
+.swiper-container {
     margin: 0 auto;
-    display: block;
-    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.gallery-top {
     img {
         max-width: 100%;
-        display: block;
         margin: 0 auto;
     }
-    .cycle-prev,
-    .cycle-next {
-        display: block;
-        position: absolute;
-        z-index: 999999;
-        cursor: pointer;
-        text-align: center;
-        top: 92%;
-        font-size: 200%;
-        color: white;
+}
+
+.gallery-thumbs {
+    box-sizing: border-box;
+    padding: 10px 0;
+    background-color: $carousel-item-bg;
+    img {
+        max-width: 100%;
+        margin: 0 auto;
     }
-    .cycle-prev {
-        left: 0;
-    }
-    .cycle-next {
-        right: 0;
-    }
-    .cycle-pager {
-        width: 100%;
-        max-width: 1400px;
-        text-align: center;
-        display: block;
+    .swiper-wrapper {
         position: relative;
-        bottom: 0;
-        z-index: 9999;
-        cursor: pointer;
-        background-color: $carousel-item-bg;
-        a {
-            display: inline-block;
-            // flex-direction: column;
+        left: -32%;
+        .swiper-slide {
+            width: 40%;
+            opacity: 0.4;
         }
-        .thumbnail {
-            width: 15%;
+        .swiper-slide-active {
+            opacity: 1;
+        }
+    }
+}
+
+@include breakpoint-1200-sm {
+    .carousel-wrapper {
+        background-color: $carousel-bg;
+    }
+    .swiper-container {
+        margin: 0 auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+    }
+    .gallery-top {
+        max-width: 1400px;
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .gallery-thumbs {
+        box-sizing: border-box;
+        padding: 10px 0;
+        background-color: $carousel-item-bg;
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .swiper-wrapper {
+            position: relative;
+            left: -32%;
+            .swiper-slide {
+                width: 10%;
+                opacity: 0.4;
+            }
+            .swiper-slide-active {
+                opacity: 1;
+            }
         }
     }
 }

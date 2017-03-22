@@ -1,16 +1,51 @@
-<div id="carousel-bg-container">
-  <div class="cycle-slideshow" data-cycle-pager-template="<a class='thumbnail' href='#'><img src='{{src}}'></a>">
-    <span class="cycle-pager"></span>
-    <span class="divider"></span>
-    <span class="cycle-prev">
-      <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </span>
-    <span class="cycle-next">
-      <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </span>
 
-    <img src="../images/banner_1.jpg" alt="Legend of Zelda">
-    <img src="../images/banner_2.jpg" alt="Ghost Recon Wildlands">
-    <img src="../images/banner_3.jpg" alt="For Honor">
-  </div>
+<div class="carousel-wrapper">
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/banner_1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_3.jpg" alt="">
+                </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/banner_1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner_3.jpg" alt="">
+                </div>
+        </div>
+    </div>
 </div>
