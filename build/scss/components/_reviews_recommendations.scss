@@ -7,16 +7,18 @@
 
 .review_grid {
     margin: 0 auto;
+    max-width: 1400px;
     // first is the paragaph
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
     .feature-lg {
         // baseline value
         flex: 1;
         img {
+            // width: 100%;
+            // height: auto;
             width: auto;
-            height: 400px;
+            height: auto;
         }
     }
     // second is the two rectangle stacking
@@ -33,7 +35,8 @@
         flex: 1;
         align-items: center;
         img {
-            width: 100%;
+            width: auto;
+            height: auto;
         }
     }
     .feature-sm-b {
@@ -41,54 +44,8 @@
         flex: 1;
         align-items: center;
         img {
-            width: 100%;
-        }
-    }
-}
-
-@include breakpoint-1200-sm {
-    .review_grid {
-        margin: 0 auto;
-        max-width: 1400px;
-        // first is the paragaph
-        display: flex;
-        flex-direction: row;
-        .feature-lg {
-            // baseline value
-            flex: 1;
-            img {
-                // width: 100%;
-                // height: auto;
-                width: auto;
-                height: auto;
-            }
-        }
-        // second is the two rectangle stacking
-        .feature-sm {
-            background-color: yellow;
-            // baseline value even sizes between child elements
-            flex: 1;
-            display: flex;
-            // sets the flex direction to column instead it's default which is row
-            flex-direction: column;
-        }
-        .feature-sm-a {
-            background-color: #c0dbe2;
-            flex: 1;
-            align-items: center;
-            img {
-                width: auto;
-                height: auto;
-            }
-        }
-        .feature-sm-b {
-            background-color: #cdf1c3;
-            flex: 1;
-            align-items: center;
-            img {
-                width: auto;
-                height: auto;
-            }
+            width: auto;
+            height: auto;
         }
     }
 }
