@@ -1,7 +1,6 @@
     .form-wrapper {
         width: 100%;
         background-color: $search-form;
-        font-family: $nav-fonts;
         form {
             .search_textbox {
                 background-image: url(../images/search.png);
@@ -31,7 +30,6 @@
         .form-wrapper {
             width: 100%;
             background-color: $search-form;
-            font-family: $nav-fonts;
             form {
                 max-width: 1400px;
                 margin: 0 auto;

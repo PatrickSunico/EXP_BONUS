@@ -22,13 +22,15 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p {
   margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 a,
@@ -54,12 +56,6 @@ ul {
 img {
   vertical-align: middle;
   height: auto;
-}
-
-.heading-wrapper {
-  background-color: white;
-  width: 92%;
-  margin: 0 auto 2rem auto;
 }
 
 @font-face {
@@ -166,6 +162,20 @@ img {
   content: "\e909";
 }
 
+.h1 {
+  color: white;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .h1 {
+    color: white;
+    margin: 20px auto;
+    max-width: 1400px;
+  }
+}
+
 .class-sm svg {
   height: 60px;
   display: -webkit-box;
@@ -183,7 +193,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-family: "Avenir LT Std";
+  font-family: "Avenir LT Std", sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -446,7 +456,6 @@ nav ul li:hover ul {
 .form-wrapper {
   width: 100%;
   background-color: #44474C;
-  font-family: "Avenir LT Std";
 }
 
 .form-wrapper form .search_textbox {
@@ -478,7 +487,6 @@ nav ul li:hover ul {
   .form-wrapper {
     width: 100%;
     background-color: #44474C;
-    font-family: "Avenir LT Std";
   }
   .form-wrapper form {
     max-width: 1400px;
@@ -582,5 +590,138 @@ nav ul li:hover ul {
   }
   .gallery-thumbs .swiper-wrapper .swiper-slide-active {
     opacity: 1;
+  }
+}
+
+.feature-wrapper {
+  padding: 70px 0;
+  background-image: -webkit-linear-gradient(225deg, #6D6F72 0%, #3B3C3E 100%);
+  background-image: linear-gradient(-135deg, #6D6F72 0%, #3B3C3E 100%);
+}
+
+.review_grid {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.review_grid .feature-lg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.review_grid .feature-lg img {
+  width: auto;
+  height: 400px;
+}
+
+.review_grid .feature-sm {
+  background-color: yellow;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review_grid .feature-sm-a {
+  background-color: #c0dbe2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review_grid .feature-sm-a img {
+  width: 100%;
+}
+
+.review_grid .feature-sm-b {
+  background-color: #cdf1c3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review_grid .feature-sm-b img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .review_grid {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .review_grid .feature-lg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .review_grid .feature-lg img {
+    width: auto;
+    height: auto;
+  }
+  .review_grid .feature-sm {
+    background-color: yellow;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review_grid .feature-sm-a {
+    background-color: #c0dbe2;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .review_grid .feature-sm-a img {
+    width: auto;
+    height: auto;
+  }
+  .review_grid .feature-sm-b {
+    background-color: #cdf1c3;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .review_grid .feature-sm-b img {
+    width: auto;
+    height: auto;
   }
 }

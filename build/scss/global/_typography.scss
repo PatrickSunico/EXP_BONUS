@@ -1,0 +1,15 @@
+// heading
+.h1 {
+  color:white;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+
+@include breakpoint-1200-sm {
+  .h1 {
+    color:white;
+    margin: 20px auto;
+    max-width: 1400px;
+  }
+}

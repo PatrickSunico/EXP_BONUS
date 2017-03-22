@@ -1,13 +1,14 @@
 // Global Mixins
-@import 'global/global';
 @import 'global/variable';
+@import 'global/global';
 @import 'global/mixins';
 @import 'global/fonts';
+@import 'global/typography';
 //vendor
 // vendor partials i.e
 // @import 'vendor/bourbon/bourbon';
 // @import 'mixins/animations';
-// Partials 
+// Partials
 // Navbar
 @import 'components/navigation_mobile';
 @import 'components/navigation_desktop';
@@ -15,4 +16,5 @@
 @import 'components/search';
 // Carousel
 @import 'components/main_carousel';
-@import 'components/carousel_experiment';
+// content
+@import 'components/reviews_recommendations';
