@@ -1,51 +1,89 @@
 // Two column Layout
-.feature-wrapper {
-    padding: 70px 0;
-    // background-image: $content-bg-color;
-    background-image: linear-gradient(-135deg, #6D6F72 0%, #3B3C3E 100%);
-}
+// .feature-wrapper {
+//     padding: 70px 0;
+//     // background-image: $content-bg-color;
+//     background-image: linear-gradient(-135deg, #6D6F72 0%, #3B3C3E 100%);
+// }
+//
+// .review_grid {
+//     margin: 0 auto;
+//     max-width: 1400px;
+//     // first is the paragaph
+//     display: flex;
+//     flex-direction: row;
+//     .feature-lg {
+//         // baseline value
+//         display: flex;
+//         flex: 1;
+//         img {
+//             max-height: 100%;
+//         }
+//     }
+//     // second is the two rectangle stacking
+//     .feature-sm {
+//         // baseline value even sizes between child elements
+//         flex: 2;
+//         display: flex;
+//         // sets the flex direction to column instead it's default which is row
+//         flex-direction: column;
+//     }
+//     .feature-sm-a {
+//         flex: 1;
+//         align-items: center;
+//         img {
+//             width: 100%;
+//         }
+//     }
+//     .feature-sm-b {
+//         flex: 1;
+//         align-items: center;
+//         img {
+//             width: 100%;
+//         }
+//     }
+// }
 
-.review_grid {
-    margin: 0 auto;
-    max-width: 1400px;
-    // first is the paragaph
-    display: flex;
-    flex-direction: row;
-    .feature-lg {
-        // baseline value
-        flex: 1;
-        img {
-            // width: 100%;
-            // height: auto;
-            width: auto;
-            height: auto;
-        }
+// Test Code
+// #outer {
+//   max-width: 1400px;
+//   margin:auto;/* demo*/
+//   display:flex;
+//   flex-wrap:wrap;
+// }
+// #outer {
+//   .itemwrapper {
+//     flex:1;
+//     img {
+//       height: 100%;
+//       min-height:200px;
+//       width:100%;
+//       min-width: 500px;
+//     }
+//   }
+// }
+//
+// #outer {
+//   .itemwrapper_lg {
+//     flex:2;
+//     img {
+//       width: 100%;
+//       min-width: 200px;
+//     }
+//   }
+// }
+#outer-div {
+
+  .single-image {
+
+    .img-1{
+      // background-image:url(http://lorempixel.com/1200/1200/nature/1);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 500px;
+      // min-height: 100%;
+      width: 50%;
+      // min-width: 100%;
     }
-    // second is the two rectangle stacking
-    .feature-sm {
-        background-color: yellow;
-        // baseline value even sizes between child elements
-        flex: 1;
-        display: flex;
-        // sets the flex direction to column instead it's default which is row
-        flex-direction: column;
-    }
-    .feature-sm-a {
-        background-color: #c0dbe2;
-        flex: 1;
-        align-items: center;
-        img {
-            width: auto;
-            height: auto;
-        }
-    }
-    .feature-sm-b {
-        background-color: #cdf1c3;
-        flex: 1;
-        align-items: center;
-        img {
-            width: auto;
-            height: auto;
-        }
-    }
+  }
 }
