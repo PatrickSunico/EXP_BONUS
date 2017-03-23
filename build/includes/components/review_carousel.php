@@ -13,6 +13,12 @@
             <div class="swiper-slide">
                 <img src="../images/carousel_featurette_4.jpg" alt="">
             </div>
+            <div class="swiper-slide">
+                <img src="../images/carousel_featurette_3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/carousel_featurette_4.jpg" alt="">
+            </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>

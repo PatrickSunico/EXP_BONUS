@@ -674,10 +674,6 @@ nav ul li:hover ul {
 @media only screen and (min-width: 768px) {
   #outer {
     margin: 0 auto;
-    /* demo*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-orient: horizontal;
@@ -688,6 +684,10 @@ nav ul li:hover ul {
 }
 
 @media only screen and (min-width: 1400px) {
+  .review_grid {
+    margin: 0 auto;
+    padding: 0;
+  }
   #outer {
     /* demo*/
     display: -webkit-box;
@@ -725,23 +725,25 @@ nav ul li:hover ul {
   }
 }
 
-.featurette_carousel {
-  margin: 0 auto;
-  max-width: 1400px;
-  background-color: #484B4F;
-}
-
-.featurette_carousel .swiper-container {
-  height: 100%;
-}
-
-.featurette_carousel .swiper-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.featurette_carousel .swiper-slide {
-  /* Center slide text vertically */
-  width: 250px;
-  height: 100%;
+@media only screen and (min-width: 1200px) {
+  .featurette_carousel {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1400px;
+    background-color: #484B4F;
+  }
+  .featurette_carousel .swiper-container {
+    height: 100%;
+  }
+  .feature_carousel {
+    box-sizing: border-box;
+  }
+  .feature_carousel .swiper-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .feature_carousel .swiper-wrapper .swiper-slide img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }

@@ -35,14 +35,16 @@
 @include breakpoint-768-sm {
     #outer {
         margin: 0 auto;
-        /* demo*/
-        display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
     }
 }
 
 @include breakpoint-1400-sm {
+  .review_grid {
+      margin: 0 auto;
+      padding: 0;
+  }
     #outer {
         /* demo*/
         display: flex;

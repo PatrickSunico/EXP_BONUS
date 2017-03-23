@@ -31,8 +31,26 @@ galleryTop.params.control = galleryThumbs;
 galleryThumbs.params.control = galleryTop;
 
 var swiper = new Swiper('.feature_carousel', {
-    pagination: '.swiper-pagination',
-    slidesPerView: 4,
-    paginationClickable: true,
-    spaceBetween: 0
+  pagination: '.swiper-pagination',
+   paginationClickable: true,
+   slidesPerView: 5,
+   spaceBetween: 50,
+   breakpoints: {
+       1024: {
+           slidesPerView: 4,
+           spaceBetween: 40
+       },
+       768: {
+           slidesPerView: 3,
+           spaceBetween: 30
+       },
+       640: {
+           slidesPerView: 2,
+           spaceBetween: 20
+       },
+       320: {
+           slidesPerView: 1,
+           spaceBetween: 10
+       }
+   }
 });
