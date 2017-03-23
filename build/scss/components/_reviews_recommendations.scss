@@ -41,10 +41,10 @@
 }
 
 @include breakpoint-1400-sm {
-  .review_grid {
-      margin: 0 auto;
-      padding: 0;
-  }
+    .review_grid {
+        margin: 0 auto;
+        padding: 0;
+    }
     #outer {
         /* demo*/
         display: flex;

@@ -16,8 +16,8 @@ var galleryTop = new Swiper('.gallery-top', {
     prevButton: '.swiper-button-prev',
     pagination: '.swiper-pagination',
     paginationType: 'progress',
-    autoplay: 2500,
-    autoplayDisableOnInteraction: false,
+    // autoplay: 2500,
+    // autoplayDisableOnInteraction: false,
     spaceBetween: 10,
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -31,26 +31,24 @@ galleryTop.params.control = galleryThumbs;
 galleryThumbs.params.control = galleryTop;
 
 var swiper = new Swiper('.feature_carousel', {
-  pagination: '.swiper-pagination',
-   paginationClickable: true,
-   slidesPerView: 5,
-   spaceBetween: 50,
-   breakpoints: {
-       1024: {
-           slidesPerView: 4,
-           spaceBetween: 40
-       },
-       768: {
-           slidesPerView: 3,
-           spaceBetween: 30
-       },
-       640: {
-           slidesPerView: 2,
-           spaceBetween: 20
-       },
-       320: {
-           slidesPerView: 1,
-           spaceBetween: 10
-       }
-   }
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+    // autoplay: 2500,
+    // autoplayDisableOnInteraction: false,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        }
+    }
 });
