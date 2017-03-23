@@ -109,6 +109,7 @@ nav ul li:hover ul {
         left: 0;
         bottom: 0;
         transition: $nav_transitions;
+        z-index: 9999;
         li {
             cursor: pointer;
             background-color: $nav_dropdown_normal;

@@ -16,9 +16,6 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-}
-
-#outer {
     .itemwrapper {
         flex: 1;
         img {
@@ -27,9 +24,6 @@
             width: 100%;
         }
     }
-}
-
-#outer {
     .itemwrapper_lg {
         flex: 2;
         img {
@@ -46,25 +40,6 @@
         flex-wrap: nowrap;
         flex-direction: row;
     }
-    #outer {
-        .itemwrapper {
-            flex: 1;
-            img {
-                height: 100%;
-                min-height: 200px;
-                width: 100%;
-                min-width: 40%;
-            }
-        }
-    }
-    #outer {
-        .itemwrapper_lg {
-            flex: 2;
-            img {
-                width: 100%;
-            }
-        }
-    }
 }
 
 @include breakpoint-1400-sm {
@@ -74,8 +49,6 @@
         flex-wrap: wrap;
         flex-direction: row;
         flex: 1;
-    }
-    #outer {
         .itemwrapper {
             flex: 1;
             img {
@@ -84,14 +57,12 @@
                 width: 100%;
                 min-width: 530px;
             }
-        }
-    }
-    #outer {
-        .itemwrapper_lg {
-            flex: 2;
-            img {
-                width: 100%;
-                min-width: 200px;
+            .itemwrapper_lg {
+                flex: 2;
+                img {
+                    width: 100%;
+                    min-width: 200px;
+                }
             }
         }
     }
