@@ -10,69 +10,61 @@
     padding: 0 10px;
 }
 
-// #outer {
-//     margin: 0 auto;
-//     /* demo*/
-//     display: flex;
-//     flex-wrap: nowrap;
-//     flex-direction: column;
-//             max-width: 100%;
-
-//     .itemwrapper {
-//         flex: 1;
-//         img {
-//             width: 100%;
-//             // height: 100%;
-//             // min-height: 200px;
-//             // width: 100%;
-//         }
-//     }
-//     .itemwrapper_lg {
-//         flex: 2;
-//         img {
-//             width: 100%;
-//             // width: 100%;
-//         }
-//     }
-// }
-
-// @include breakpoint-768-sm {
-//     #outer {
-//         margin: 0 auto;
-//         flex-wrap: nowrap;
-//         flex-direction: row;
-//                 max-width: 100%;
-
-//     }
-// }
-
-// @include breakpoint-1200-sm {
-    .review_grid {
-        margin: 0 auto;
-        padding: 0;
+.outer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    .itemwrapper_sm {
+        flex: 1;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    #outer {
-        /* demo*/
+    .itemwrapper_lg {
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include breakpoint-640-sm {
+    .outer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        flex: 1;
         max-width: 100%;
-        .itemwrapper {
+    }
+}
+
+@include breakpoint-1200-sm {
+    .outer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        .itemwrapper_sm {
             flex: 1;
             img {
-                // height: 100%;
-                // min-height: 200px;
-                // width: 100%;
-                // min-width: 530px;
+                width: 100%;
+                height: 100%;
             }
-            .itemwrapper_lg {
-                flex: 2;
+        }
+        .itemwrapper_lg {
+            flex: 2;
+            display: flex;
+            flex-wrap: wrap;
+            .item {
                 img {
-                    // width: 100%;
-                    // min-width: 200px;
+                    width: 100%;
                 }
             }
         }
     }
-// }
+}

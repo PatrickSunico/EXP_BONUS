@@ -33,10 +33,33 @@ galleryThumbs.params.control = galleryTop;
 var swiper = new Swiper('.feature_carousel', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
-    slidesPerView: 5,
+    slidesPerView: 4,
     spaceBetween: 40,
     // autoplay: 2500,
     // autoplayDisableOnInteraction: false,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    }
+});
+
+
+var swiper = new Swiper('.releases_carousel', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 4,
+    slidesPerColumn: 2,
+    paginationClickable: true,
+    spaceBetween: 30,
     breakpoints: {
         1024: {
             slidesPerView: 4,
