@@ -725,22 +725,23 @@ nav ul li:hover ul {
   }
 }
 
-.review_carousel {
-  margin: 50px auto;
+.featurette_carousel {
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color: #484B4F;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.featurette_carousel .swiper-container {
+  height: 100%;
+}
+
+.featurette_carousel .swiper-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.featurette_carousel .swiper-slide {
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  width: 250px;
+  height: 100%;
 }

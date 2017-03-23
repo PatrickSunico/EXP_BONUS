@@ -1,18 +1,22 @@
-.review_carousel {
-    margin: 50px auto;
-}
-
-.swiper-container {
-    // width: 100%;
-    // height: 100%;
-}
-
-.swiper-slide {
-    // text-align: center;
-    // font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.featurette_carousel {
+    margin: 0 auto;
+    max-width: 1400px;
+    background-color: $feature-carousel-bg-color;
+    .swiper-container {
+        height: 100%;
+    }
+    .swiper-wrapper {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .swiper-slide {
+        // text-align: center;
+        // font-size: 18px;
+        /* Center slide text vertically */
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        width: 250px;
+        height: 100%;
+    }
 }

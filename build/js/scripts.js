@@ -30,9 +30,9 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 galleryTop.params.control = galleryThumbs;
 galleryThumbs.params.control = galleryTop;
 
-var swiper = new Swiper('.review-carousel', {
+var swiper = new Swiper('.feature_carousel', {
     pagination: '.swiper-pagination',
-    slidesPerView: 3,
+    slidesPerView: 4,
     paginationClickable: true,
-    spaceBetween: 30
+    spaceBetween: 0
 });
