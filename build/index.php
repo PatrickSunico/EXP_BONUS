@@ -7,6 +7,7 @@
 
   <div id="feature-wrapper">
     <?php include('includes/components/reviews_recommendations.php'); ?>
+    <?php include('includes/components/review_carousel.php'); ?>
   </div>
 
 

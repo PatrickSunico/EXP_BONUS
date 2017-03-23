@@ -1,17 +1,13 @@
-.carousel-wrapper {
+.main-carousel {
     background-color: $carousel-bg;
 }
 
-.swiper-container {
-    margin: 0 auto;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-}
-
 .gallery-top {
+    margin: 0 auto;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+    }
     img {
         max-width: 100%;
         margin: 0 auto;
@@ -40,10 +36,10 @@
 }
 
 @include breakpoint-1200-sm {
-    .carousel-wrapper {
+    .main-carousel {
         background-color: $carousel-bg;
     }
-    .swiper-container {
+    .gallery-top {
         margin: 0 auto;
     }
     .swiper-slide {

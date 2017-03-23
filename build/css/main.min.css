@@ -22,17 +22,6 @@ body {
   line-height: 1.5;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-p {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-}
-
 a,
 a:visited,
 a:focus,
@@ -551,15 +540,15 @@ nav ul li:hover ul {
   }
 }
 
-.carousel-wrapper {
+.main-carousel {
   background-color: #414244;
 }
 
-.swiper-container {
+.gallery-top {
   margin: 0 auto;
 }
 
-.swiper-slide {
+.gallery-top .swiper-slide {
   text-align: center;
   font-size: 18px;
 }
@@ -595,10 +584,10 @@ nav ul li:hover ul {
 }
 
 @media only screen and (min-width: 1200px) {
-  .carousel-wrapper {
+  .main-carousel {
     background-color: #414244;
   }
-  .swiper-container {
+  .gallery-top {
     margin: 0 auto;
   }
   .swiper-slide {
@@ -734,4 +723,24 @@ nav ul li:hover ul {
     width: 100%;
     min-width: 200px;
   }
+}
+
+.review_carousel {
+  margin: 50px auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }

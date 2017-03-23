@@ -14,6 +14,7 @@ $(window).on('resize', function() {
 var galleryTop = new Swiper('.gallery-top', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
+    pagination: '.swiper-pagination',
     paginationType: 'progress',
     autoplay: 2500,
     autoplayDisableOnInteraction: false,
@@ -28,3 +29,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 galleryTop.params.control = galleryThumbs;
 galleryThumbs.params.control = galleryTop;
+
+var swiper = new Swiper('.review-carousel', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 30
+});

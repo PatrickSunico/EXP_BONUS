@@ -1,5 +1,5 @@
 
-<div class="carousel-wrapper">
+<div class="main-carousel">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -22,6 +22,7 @@
                 </div>
         </div>
         <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-next swiper-button-white"></div>
         <div class="swiper-button-prev swiper-button-white"></div>
     </div>
