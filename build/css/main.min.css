@@ -632,18 +632,26 @@ nav ul li:hover ul {
   padding: 0 10px;
 }
 
-#outer {
+.review_grid {
   margin: 0 auto;
+  padding: 0;
+}
+
+#outer {
   /* demo*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
 }
 
 #outer .itemwrapper {
@@ -652,74 +660,10 @@ nav ul li:hover ul {
           flex: 1;
 }
 
-#outer .itemwrapper img {
-  height: 100%;
-  min-height: 200px;
-  width: 100%;
-}
-
-#outer .itemwrapper_lg {
+#outer .itemwrapper .itemwrapper_lg {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-}
-
-#outer .itemwrapper_lg img {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  #outer {
-    margin: 0 auto;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .review_grid {
-    margin: 0 auto;
-    padding: 0;
-  }
-  #outer {
-    /* demo*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  #outer .itemwrapper {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  #outer .itemwrapper img {
-    height: 100%;
-    min-height: 200px;
-    width: 100%;
-    min-width: 530px;
-  }
-  #outer .itemwrapper .itemwrapper_lg {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-  }
-  #outer .itemwrapper .itemwrapper_lg img {
-    width: 100%;
-    min-width: 200px;
-  }
 }
 
 .featurette_carousel {

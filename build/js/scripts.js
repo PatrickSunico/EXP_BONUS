@@ -47,7 +47,7 @@ var swiper = new Swiper('.feature_carousel', {
             spaceBetween: 30
         },
         640: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20
         }
     }
