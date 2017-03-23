@@ -5,7 +5,7 @@
   <?php include('includes/components/search.php');?>
   <?php include('includes/components/main_carousel.php'); ?>
 
-  <div class="feature-wrapper">
+  <div id="feature-wrapper">
     <?php include('includes/components/reviews_recommendations.php'); ?>
   </div>
 

@@ -1,15 +1,62 @@
 // heading
-.h1 {
-  color:white;
-  margin: 20px auto;
-  padding: 20px 0;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.p {
+    margin: 0;
+    font-family: $primary-font;
 }
 
+// default mobile font sizes
+.h1 {
+    font-size: 1.200em;
+    font-weight: bold;
+    color: white;
+    padding: 0.654rem 0;
+}
+
+.h2 {
+    font-size: 0.980em;
+    font-weight: lighter;
+}
+
+.h3 {
+    font-size: 1.300em;
+}
+
+// paragraphs styling
+.p-heading {
+    font-size: 0.768em;
+}
+
+// responsive fonts
+
+/* 1em @ 48em (640px) increasing to 2em @ 120em (1920px) */
 
 @include breakpoint-1200-sm {
-  .h1 {
-    color:white;
-    margin: 20px auto;
-    max-width: 1400px;
-  }
+    // main headings
+    .h1 {
+        font-size: calc(100% + ((1vw - 0.48rem) * 1.389));
+        padding: 1rem 0;
+    }
+    .h2 {
+        font-size: calc(70% + ((1vw - 0.48rem) * 1.389));
+    }
+    .h3 {
+        font-size: calc(100% + ((1vw - 0.48rem) * 1.389));
+    }
+    // paragraph heading carousel
+    .p-heading {
+        font-size: calc(70% + ((1vw - 0.48rem) * 0.382));
+    }
+    // paragraph main content
+    .p-main {
+        font-size: calc(70% + ((1vw - 0.1rem) * 0.486));
+    }
+    a.btn-sharp {
+        font-size: calc(70% + ((1vw - 0.48rem) * 0.486));
+    }
 }

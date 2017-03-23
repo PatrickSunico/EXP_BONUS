@@ -54,6 +54,12 @@
 }
 
 //Breakpoints Mobile First
+@mixin breakpoint-1400-sm {
+    @media only screen and (min-width: 1400px) {
+        @content;
+    }
+}
+
 @mixin breakpoint-1200-sm {
     @media only screen and (min-width: 1200px) {
         @content;
