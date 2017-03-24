@@ -2,7 +2,7 @@
 @include breakpoint-1200-sm {
     //logo on small screens
     .flex-nav-container {
-        max-width: 1400px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0px;
         transition: $ease_squeeze;

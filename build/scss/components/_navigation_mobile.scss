@@ -19,6 +19,8 @@ nav {
     align-items: center;
     padding: 0 20px;
     transition: $ease_squeeze;
+    max-width: 960px;
+    margin: 0 auto;
     .logo-placeholder {
         display: flex;
         align-items: center;

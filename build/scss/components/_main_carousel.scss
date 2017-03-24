@@ -2,12 +2,85 @@
     background-color: $carousel-bg;
 }
 
-.gallery-top {
+// .gallery-top {
+//     width: 100%;
+//     margin: 0 auto;
+//     .swiper-slide {
+//         text-align: center;
+//         font-size: 18px;
+//     }
+//     img {
+//         max-width: 100%;
+//         margin: 0 auto;
+//     }
+// }
+// .gallery-thumbs {
+//     box-sizing: border-box;
+//     padding: 10px 0;
+//     background-color: $carousel-item-bg;
+//     img {
+//         max-width: 100%;
+//         margin: 0 auto;
+//     }
+//     .swiper-wrapper {
+//         position: relative;
+//         .swiper-slide {
+//             width: 20%;
+//             opacity: 0.4;
+//         }
+//         .swiper-slide-active {
+//             opacity: 1;
+//         }
+//     }
+// }
+// @include breakpoint-991-sm {
+//     .gallery-top {
+//         width: 80%;
+//         margin: 0 auto;
+//         .swiper-slide {
+//             text-align: center;
+//             font-size: 18px;
+//         }
+//         img {
+//             max-width: 100%;
+//             margin: 0 auto;
+//         }
+//     }
+//     .gallery-thumbs {
+//         box-sizing: border-box;
+//         padding: 10px 0;
+//         background-color: $carousel-item-bg;
+//         img {
+//             max-width: 100%;
+//             margin: 0 auto;
+//         }
+//         .swiper-wrapper {
+//             position: relative;
+//             .swiper-slide {
+//                 width: 10%;
+//                 opacity: 0.4;
+//             }
+//             .swiper-slide-active {
+//                 opacity: 1;
+//             }
+//         }
+//     }
+// }
+.main-carousel {
+    // max-width: 1200px;
     margin: 0 auto;
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
+    .swiper-container {
+        max-width: 960px;
     }
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.gallery-top {
+    max-width: 1400px;
     img {
         max-width: 100%;
         margin: 0 auto;
@@ -24,9 +97,8 @@
     }
     .swiper-wrapper {
         position: relative;
-        left: -32%;
         .swiper-slide {
-            width: 40%;
+            width: 100px;
             opacity: 0.4;
         }
         .swiper-slide-active {
@@ -37,10 +109,11 @@
 
 @include breakpoint-1200-sm {
     .main-carousel {
-        background-color: $carousel-bg;
-    }
-    .gallery-top {
+        // max-width: 1200px;
         margin: 0 auto;
+        .swiper-container {
+            max-width: 1200px;
+        }
     }
     .swiper-slide {
         text-align: center;
@@ -63,9 +136,8 @@
         }
         .swiper-wrapper {
             position: relative;
-            left: -32%;
             .swiper-slide {
-                width: 10%;
+                width: 100px;
                 opacity: 0.4;
             }
             .swiper-slide-active {

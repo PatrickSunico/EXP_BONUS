@@ -195,7 +195,7 @@ img {
   .h3 {
     font-size: calc(100% + ((1vw - 0.48rem) * 1.389));
   }
-  .p-heading {
+  a {
     font-size: calc(70% + ((1vw - 0.48rem) * 0.382));
   }
   .p-main {
@@ -230,6 +230,8 @@ nav {
   padding: 0 20px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .flex-nav-container .logo-placeholder {
@@ -379,7 +381,7 @@ nav ul li:hover ul {
 
 @media only screen and (min-width: 1200px) {
   .flex-nav-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0px;
     -webkit-transition: all 0.4s ease-in-out;
@@ -542,13 +544,21 @@ nav ul li:hover ul {
   background-color: #414244;
 }
 
-.gallery-top {
+.main-carousel {
   margin: 0 auto;
 }
 
-.gallery-top .swiper-slide {
+.main-carousel .swiper-container {
+  max-width: 960px;
+}
+
+.swiper-slide {
   text-align: center;
   font-size: 18px;
+}
+
+.gallery-top {
+  max-width: 1400px;
 }
 
 .gallery-top img {
@@ -569,11 +579,10 @@ nav ul li:hover ul {
 
 .gallery-thumbs .swiper-wrapper {
   position: relative;
-  left: -32%;
 }
 
 .gallery-thumbs .swiper-wrapper .swiper-slide {
-  width: 40%;
+  width: 100px;
   opacity: 0.4;
 }
 
@@ -583,10 +592,10 @@ nav ul li:hover ul {
 
 @media only screen and (min-width: 1200px) {
   .main-carousel {
-    background-color: #414244;
-  }
-  .gallery-top {
     margin: 0 auto;
+  }
+  .main-carousel .swiper-container {
+    max-width: 1200px;
   }
   .swiper-slide {
     text-align: center;
@@ -610,10 +619,9 @@ nav ul li:hover ul {
   }
   .gallery-thumbs .swiper-wrapper {
     position: relative;
-    left: -32%;
   }
   .gallery-thumbs .swiper-wrapper .swiper-slide {
-    width: 10%;
+    width: 100px;
     opacity: 0.4;
   }
   .gallery-thumbs .swiper-wrapper .swiper-slide-active {
