@@ -15,7 +15,6 @@
     font-size: 1.200em;
     font-weight: bold;
     color: white;
-    padding: 1.4500em 10px;
     text-transform: uppercase;
 }
 
@@ -33,6 +32,46 @@
     font-size: 0.768em;
 }
 
+.heading {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-start;
+    .h1 {
+        flex: 1;
+        padding: 1.4500em 10px;
+    }
+    a {
+        flex: 1;
+        padding: 0.600em 10px;
+        text-transform: uppercase;
+        color: white;
+        &:hover {
+            transition: $nav_transitions;
+            color: $link-hover;
+        }
+    }
+}
+
+@include breakpoint-1200-sm {
+    .heading {
+        max-width: 1200px;
+        // margin: 0 auto;
+        // display: flex;
+        flex-direction: row;
+        align-items: center;
+        .h1 {
+            flex: 6;
+            padding: 1rem 0;
+        }
+        a {
+            flex: 1;
+            padding: 1rem 0;
+        }
+    }
+}
+
 // responsive fonts
 
 /* 1em @ 48em (640px) increasing to 2em @ 120em (1920px) */
@@ -40,8 +79,7 @@
 @include breakpoint-1200-sm {
     // main headings
     .h1 {
-        font-size: calc(100% + ((1vw - 0.48rem) * 1.389));
-        padding: 1rem 0;
+        font-size: calc(100% + ((1vw - 0.80rem) * 1.389));
     }
     .h2 {
         font-size: calc(70% + ((1vw - 0.48rem) * 1.389));

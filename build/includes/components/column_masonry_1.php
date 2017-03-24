@@ -1,7 +1,4 @@
 <!--https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=480&h=340-->
-<div class="heading-wrapper">
-  <h1>Masonry Example 1 with Column Strategy</h1>
-</div>
 <div class="masonry-wrapper">
   <?php
     // Random Image Selector

@@ -1,3 +1,7 @@
+<div class="heading">
+  <h1 class="h1">Upcoming Releases</h1>
+  <a href="#"> Browse Library +</a>
+</div>
 <div class="releases_wrapper">
     <div class="swiper-container releases_carousel">
         <div class="swiper-wrapper">
