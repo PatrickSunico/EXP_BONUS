@@ -1,5 +1,5 @@
 .releases_wrapper {
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 0 10px;
     background-color: $feature-carousel-bg-color;
     .swiper-container {
@@ -32,7 +32,7 @@
 
 @include breakpoint-1200-sm {
     .releases_wrapper {
-        margin: 20px auto;
+        margin: 0 auto;
         background-color: $feature-carousel-bg-color;
         max-width: 1200px;
         padding: 0 40px;

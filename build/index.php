@@ -6,6 +6,7 @@
   <?php include('includes/components/main_carousel.php'); ?>
 
   <div id="feature-wrapper">
+    
     <?php include('includes/components/reviews_recommendations.php'); ?>
     <?php include('includes/components/features_carousel.php'); ?>
     <!--2 Row Carousel-->

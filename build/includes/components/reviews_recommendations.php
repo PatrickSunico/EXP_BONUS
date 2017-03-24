@@ -10,16 +10,13 @@
           <img src="../images/feature-1.jpg" alt="image">
         </a>
       </div>
-
       <div class="item-grp">
         <a href="#" class="img-item-sm">
           <img src="../images/feature-2.jpg" alt="image">
         </a>
-
         <a href="#" class="img-item-sm">
           <img src="../images/feature-3.jpg" alt="image">
         </a>
-
       </div>
     </div>
 </div>
