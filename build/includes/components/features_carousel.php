@@ -1,4 +1,4 @@
-<div class="featurette_carousel">
+<div class="featurette_wrapper">
     <div class="swiper-container feature_carousel">
         <div class="swiper-wrapper">
             <div class="swiper-slide">

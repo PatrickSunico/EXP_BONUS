@@ -11,14 +11,18 @@ $(window).on('resize', function() {
     $('ul').removeClass('open');
 });
 
+// Main Carousel
 var galleryTop = new Swiper('.gallery-top', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     pagination: '.swiper-pagination',
     paginationType: 'progress',
+
     // autoplay: 2500,
     // autoplayDisableOnInteraction: false,
-    spaceBetween: 10,
+    spaceBetween: 0,
+    effect: 'fade'
+
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 10,
@@ -30,11 +34,12 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 galleryTop.params.control = galleryThumbs;
 galleryThumbs.params.control = galleryTop;
 
+// Featured Games Carousel
 var swiper = new Swiper('.feature_carousel', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
-    slidesPerView: 4,
-    spaceBetween: 40,
+    slidesPerView: 5,
+    spaceBetween: 30,
     // autoplay: 2500,
     // autoplayDisableOnInteraction: false,
     breakpoints: {
@@ -53,7 +58,7 @@ var swiper = new Swiper('.feature_carousel', {
     }
 });
 
-
+// Upcoming Releases 
 var swiper = new Swiper('.releases_carousel', {
     pagination: '.swiper-pagination',
     slidesPerView: 4,

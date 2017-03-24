@@ -5,9 +5,6 @@
 @import 'global/fonts';
 @import 'global/typography';
 //vendor
-// vendor partials i.e
-// @import 'vendor/bourbon/bourbon';
-// @import 'mixins/animations';
 // Partials
 // Navbar
 @import 'components/navigation_mobile';
@@ -18,6 +15,7 @@
 @import 'components/main_carousel';
 // content
 @import 'components/reviews_recommendations';
-@import 'components/review_carousel';
-// upcoming releases
-@import 'components/upcoming_releases';
+// Features Carousel
+@import 'components/features_carousel';
+// upcoming releases / Indie Releases
+@import 'components/2row_carousel';
