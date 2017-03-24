@@ -1,28 +1,3 @@
-
-<!--<div class="two_column_flex">
-  <div class="nw-media-object">
-    <div class="heading">
-      <h1 class="h1">News & Community Reviews</h1>
-    </div>
-    <div class="object">
-      <img class="media-sm" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=80%C3%9780&w=80&h=80" alt="">
-      <div class="media-body">
-        <h2 class="h2">Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eos nemo excepturi molestias, aliquam necessitatibus optio? Fugit error dignissimos commodi soluta fuga a, adipisci, ea sequi quam eaque quisquam nostrum.</p>
-      </div>
-    </div>
-  </div>
-  <div class="trending">
-    <ul class="trending-list">
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-    </ul>
-  </div>
-</div>-->
-
 <div class="two_column_flex">
   <!--news-->
   <div class="nw-media-object">

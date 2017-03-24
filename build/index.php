@@ -13,9 +13,7 @@
     <?php include('includes/components/upcoming_releases.php');?>
     <!--Indie Releases-->
     <?php include('includes/components/indie_releases.php');?>
-
-        <?php include('includes/components/news.php');?>
-
+    <?php include('includes/components/news.php');?>
   </div>
 
 
