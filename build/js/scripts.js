@@ -59,7 +59,7 @@ var swiper = new Swiper('.feature_carousel', {
 });
 
 // Upcoming Releases 
-var swiper = new Swiper('.releases_carousel', {
+var swiper = new Swiper('.two_row_carousel', {
     pagination: '.swiper-pagination',
     slidesPerView: 4,
     slidesPerColumn: 2,

@@ -6,19 +6,19 @@
   <?php include('includes/components/main_carousel.php'); ?>
 
   <div id="feature-wrapper">
-    
     <?php include('includes/components/reviews_recommendations.php'); ?>
     <?php include('includes/components/features_carousel.php'); ?>
     <!--2 Row Carousel-->
     <!--Upcoming Releases-->
-    <?php include('includes/components/2row_carousel.php');?>
+    <?php include('includes/components/upcoming_releases.php');?>
     <!--Indie Releases-->
-    <?php include('includes/components/2row_carousel.php');?>
+    <?php include('includes/components/indie_releases.php');?>
+
+        <?php include('includes/components/news.php');?>
+
   </div>
 
-  <div id="news">
-    
-  </div>
+
 
 
 <?php

@@ -1,5 +1,5 @@
 // Navbar Variables
-$navbar-bg: #21395B;
+$navbar-bg: #353535;
 $link-hover: #CDC6C6;
 $link-color: #fff;
 $nav-fonts: 'Avenir LT Std',
@@ -21,3 +21,10 @@ sans-serif;
 $content-bg-color: linear-gradient(-135deg, #6D6F72 0%, #3B3C3E 100%);
 // Feature Carousels 
 $feature-carousel-bg-color: #484B4F;
+// News Section
+$box-shadow: 0 1px 3px rgba(0, 0, 0, .12),
+0 1px 2px rgba(0, 0, 0, .25);
+$box-shadow-transition: all .3s cubic-bezier(0.25, 0.8, .25, 1);
+$box-shadow-hover:0 14px 28px rgba(0, 0, 0, .25),
+0 10px 10px rgba(0, 0, 0, .20);
+$trending-img-transition:all 1s cubic-bezier(0.25, 0.8, .25, 1);

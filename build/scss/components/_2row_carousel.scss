@@ -1,4 +1,4 @@
-.releases_wrapper {
+.two_row_wrapper {
     margin: 0 auto;
     padding: 0 10px;
     background-color: $feature-carousel-bg-color;
@@ -7,14 +7,14 @@
     }
 }
 
-.swiper-container.releases_carousel {
+.swiper-container.two_row_carousel {
     box-sizing: border-box;
     max-width: 960px;
     margin: 0 auto;
 }
 
 // releases carousel 
-.swiper-container.releases_carousel {
+.swiper-container.two_row_carousel {
     .swiper-wrapper {
         padding: 40px 0;
         margin: 0 auto;
@@ -31,7 +31,7 @@
 }
 
 @include breakpoint-1200-sm {
-    .releases_wrapper {
+    .two_row_wrapper {
         margin: 0 auto;
         background-color: $feature-carousel-bg-color;
         max-width: 1200px;
@@ -40,13 +40,13 @@
             height: 100%;
         }
     }
-    .swiper-container.releases_carousel {
+    .swiper-container.two_row_carousel {
         box-sizing: border-box;
         max-width: 1200px;
         margin: 0 auto;
     }
     // releases Carousel
-    .swiper-container.releases_carousel {
+    .swiper-container.two_row_carousel {
         .swiper-wrapper {
             padding: 40px 0;
             margin: 0 auto;
