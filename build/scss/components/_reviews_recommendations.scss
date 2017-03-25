@@ -10,33 +10,25 @@
 }
 
 .masonry-image {
-    // column-count: 2;
     display: flex;
     flex-direction: column;
 }
 
-.wrapper {
-    width: 1200px;
-    margin: 1rem auto;
-}
-
-.img-item-lg {
-    background-color: #eee;
-    display: block;
-    width: 100%;
-    img {
-        width: 100%;
-        height: auto;
-        opacity: .75;
-        transition: all 1s cubic-bezier(0.25, 0.8, .25, 1);
-        &:hover {
-            opacity: 1;
-        }
-    }
-}
-
 .item-grp {
     .img-item-sm {
+        display: block;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            opacity: .75;
+            transition: all 1s cubic-bezier(0.25, 0.8, .25, 1);
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .img-item-lg {
         display: block;
         width: 100%;
         img {
@@ -54,45 +46,9 @@
 @include breakpoint-640-sm {
     .review_grid {
         padding: 0;
-        // margin: 0 auto;
     }
     .masonry-image {
-        // column-count: 2;
-        display: flex;
         flex-direction: row;
-    }
-    .wrapper {
-        // width: 1200px;
-        // margin: 1rem auto;
-    }
-    .img-item-lg {
-        background-color: #eee;
-        display: block;
-        width: 100%;
-        img {
-            width: 100%;
-            height: auto;
-            opacity: .75;
-            transition: all 1s cubic-bezier(0.25, 0.8, .25, 1);
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
-    .item-grp {
-        .img-item-sm {
-            display: block;
-            width: 100%;
-            img {
-                width: 100%;
-                height: auto;
-                opacity: .75;
-                transition: all 1s cubic-bezier(0.25, 0.8, .25, 1);
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
     }
 }
 
@@ -101,41 +57,10 @@
         padding: 0;
     }
     .masonry-image {
-        // column-count: 2;
-        display: flex;
         flex-direction: row;
     }
     .wrapper {
         width: 1200px;
         margin: 1rem auto;
-    }
-    .img-item-lg {
-        background-color: #eee;
-        display: block;
-        width: 100%;
-        img {
-            width: 100%;
-            height: auto;
-            opacity: .75;
-            transition: all 1s cubic-bezier(0.25, 0.8, .25, 1);
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
-    .item-grp {
-        .img-item-sm {
-            display: block;
-            width: 100%;
-            img {
-                width: 100%;
-                height: auto;
-                opacity: .75;
-                transition: all 1s cubic-bezier(0.25, 0.8, .25, 1);
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
     }
 }

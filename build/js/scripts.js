@@ -6,9 +6,10 @@ $('document').ready(function() {
     });
 });
 
-$(window).on('resize', function() {
+$(window).on('resize', function(e) {
     // remove class on resize
     $('ul').removeClass('open');
+    e.preventDefault();
 });
 
 // Main Carousel

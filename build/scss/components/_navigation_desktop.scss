@@ -1,11 +1,9 @@
 // Desktop
 @include breakpoint-1200-sm {
-    //logo on small screens
     .flex-nav-container {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 0px;
-        transition: $ease_squeeze;
         .logo-placeholder {
             padding: 10px 0;
             // switch logos
@@ -19,30 +17,18 @@
                 display: none;
             }
         }
-        .ul-container {
-            list-style: none;
-            align-items: center;
-            // margin: 0;
-            // padding: 0;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            flex: 4;
-            li {
-                position: relative;
-                flex: 3;
-                a.primary-menu {
-                    display: block;
-                    padding: 3rem 0;
-                    &:hover {
-                        background-color: $nav_dropdown_normal;
-                        color: white;
-                        transition: $nav_transitions;
-                    }
-                }
-            }
-            .social {
-                flex: 1;
+    }
+    .ul-container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex: 4;
+        li {
+            position: relative;
+            flex: 3;
+            a.primary-menu {
+                padding: 3rem 0;
             }
         }
     }
@@ -52,33 +38,18 @@
     // Submenu
     .has-children {
         ul {
-            display: none;
+            flex-direction: column;
             position: absolute;
             z-index: 2;
             top: 100%;
-            flex-direction: column;
             width: 100%;
-            padding: 0;
-            background-color: $nav_dropdown_hover;
             li {
-                width: 100%;
-                padding: 0;
                 a.sub-menu {
                     display: block;
                     padding: 1rem 0;
                     color: #fff;
-                    &:hover {
-                        transition: $nav_transitions;
-                        color: $link-hover;
-                        background-color: $nav_dropdown_normal;
-                    }
                 }
             }
         }
     }
-    nav ul li:hover ul {
-        display: flex;
-        flex-direction: column;
-    }
-    // End
 }

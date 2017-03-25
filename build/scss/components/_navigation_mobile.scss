@@ -1,16 +1,53 @@
-// Navigation Mobile First
-.class-sm {
-    svg {
-        height: 60px;
-        display: flex;
-        text-align: center;
-    }
-}
-
 nav {
     background-color: $navbar-bg;
 }
 
+// link base style
+a.primary-menu {
+    color: $link-color;
+    display: block;
+    padding: 2rem 1rem;
+    .icon-account {
+        margin-right: 10px;
+    }
+}
+
+a.sub-menu {
+    color: $link-color;
+    display: block;
+    padding: 2rem 3rem;
+}
+
+// link hover animations
+a.primary-menu:hover,
+a.sub-menu:hover {
+    background-color: $nav-link-hover;
+    transition: $nav_transitions;
+}
+
+// Drop Down hover
+nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    transition: $nav_transitions;
+}
+
+// button style
+.toggleNav {
+    display: flex;
+    margin: 0 auto;
+    font-size: 22px;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+    height: 20px;
+    &:hover {
+        color: $link-hover;
+        transition: $nav_transitions;
+    }
+}
+
+// Flex-Container
 .flex-nav-container {
     display: flex;
     // set to relative for positioned absolute .open class
@@ -30,49 +67,31 @@ nav {
         flex: 1;
         // switch logos
         .logo-sm {
+            align-items: center;
+            display: flex;
             svg {
                 height: 100px;
                 display: flex;
             }
         }
         .logo-lg {
+            align-items: center;
             display: none;
         }
     }
-    .ul-container {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: none;
-        text-align: center;
-        flex-wrap: wrap;
-        li {
-            // single column on mobile screen 
-            flex-basis: 100%;
-            a.primary-menu {
-                color: $link-color;
-                display: block;
-                padding: 2rem 1rem;
-                .fa:before {
-                    margin-left: 5px;
-                    margin-right: 5px;
-                }
-                .icon-account {
-                    margin-right: 10px;
-                }
-                &:hover {
-                    color: $link-hover;
-                    background-color: $nav_dropdown_hover;
-                }
-            }
-        }
-        .social {
-            // comment - defaults to 4 columns 
-            flex: 1;
-            text-align: center;
-            // uncomment for single column
-            // flex: 1 1 100%;
-        }
+}
+
+.ul-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    text-align: center;
+    flex-wrap: wrap;
+    // Normal li's
+    li {
+        flex-basis: 100%;
+        position: relative;
     }
 }
 
@@ -80,63 +99,30 @@ nav {
 .has-children {
     ul {
         display: none;
+        padding: 0;
+        background-color: $nav-link-color;
         li {
-            a.sub-menu {
-                color: $link-color;
-                display: block;
-                padding: 2rem 3rem;
-                &:hover {
-                    transition: $nav_transitions;
-                    background-color: $nav_dropdown_hover;
-                }
-            }
+            width: 100%;
+            padding: 0;
         }
     }
-}
-
-nav ul li:hover ul {
-    display: flex;
-    flex-direction: column;
 }
 
 // End
 // open nav animation
-.flex-nav-container {
-    .open {
-        display: flex;
-        position: absolute;
-        flex-direction: row;
-        top: 100%;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        transition: $nav_transitions;
-        z-index: 9999;
-        li {
-            cursor: pointer;
-            background-color: $nav_dropdown_normal;
-            text-align: left;
-            a.primary-menu {
-                &:hover {
-                    transition: $nav_transitions;
-                    background-color: $nav_dropdown_hover;
-                }
-            }
-        }
-    }
-}
-
-// button style
-.toggleNav {
+.open {
     display: flex;
-    margin: 0 auto;
-    font-size: 22px;
-    cursor: pointer;
-    align-items: center;
-    color: white;
-    height: 20px;
-    &:hover {
-        color: $link-hover;
-        transition: $nav_transitions;
+    position: absolute;
+    flex-direction: row;
+    top: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: $nav_transitions;
+    z-index: 9999;
+    li {
+        cursor: pointer;
+        background-color: $nav-link-color;
+        text-align: left;
     }
 }
