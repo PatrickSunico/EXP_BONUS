@@ -5,7 +5,7 @@
       <li><a class="footer-link" href="#"> Top Sellers </a></li>
       <li><a class="footer-link" href="#"> New Releases </a></li>
       <li><a class="footer-link" href="#"> Upcoming Games </a></li>
-      <li><a class="footer-link" href="#"> Editor's Choice' </a></li>
+      <li><a class="footer-link" href="#"> Editor's Choice </a></li>
     </ul>
 
     <ul class="sitemap">
@@ -15,13 +15,12 @@
       <li><a class="footer-link" href="#"> Xbox one </a></li>
       <li><a class="footer-link" href="#"> Switch </a></li>
       <li><a class="footer-link" href="#"> PC </a></li>
-
     </ul>
 
      <ul class="sitemap">
       <h3 class="h3">Platforms</h3>
       <li><a class="footer-link" href="#"> Platform Reviews </a></li>
-      <li><a class="footer-link" href="#"> Buyer's Guide' </a></li>
+      <li><a class="footer-link" href="#"> Buyer's Guide</a></li>
 
     </ul>
 
@@ -55,19 +54,12 @@
       </ul>
 
     </ul>
-  </div>
-</div>
-
-<div id="policies_footer">
-    <div class="secondary-footer">
-    <ul class="policies">
-      <li><a class="secondary-footer-link" href="#"> Terms & Conditions </a></li>
-      <li><a class="secondary-footer-link" href="#"> Privacy Policy </a></li>
-      <li><a class="secondary-footer-link" href="#"> Terms of Use </a></li>
-      <li><a class="secondary-footer-link" href="#"> Support </a></li>
-      <li><a class="secondary-footer-link" href="#"> Careers </a></li>
-
+    <ul class="sitemap">
+      <h3 class="h3">Support</h3>
+      <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+      <li><a class="footer-link" href="#">Privacy Policy</a></li>
+      <li><a class="footer-link" href="#">Terms of use</a></li>
+      <li><a class="footer-link" href="#">Careers</a></li>
     </ul>
   </div>
 </div>
-
