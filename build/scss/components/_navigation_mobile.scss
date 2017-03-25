@@ -52,7 +52,7 @@ nav ul li:hover ul {
     display: flex;
     // set to relative for positioned absolute .open class
     position: relative;
-    font-family: $nav-fonts;
+    font-family: $secondary-font;
     align-items: center;
     padding: 0 20px;
     transition: $ease_squeeze;

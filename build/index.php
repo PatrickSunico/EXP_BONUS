@@ -16,9 +16,6 @@
     <?php include('includes/components/news.php');?>
   </div>
 
-
-
-
 <?php
   include('includes/global/footer.php');
 ?>
