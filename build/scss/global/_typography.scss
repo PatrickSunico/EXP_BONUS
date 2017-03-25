@@ -53,11 +53,25 @@
     color: white;
 }
 
+// Footer 
 .secondary-footer-link {
     color: white;
     text-transform: uppercase;
     font-family: $secondary-font;
     font-size: 0.80em;
+}
+
+// Social Links 
+.social-links {
+    .facebook-official {
+        color: #4A90E2;
+    }
+    .fa-twitter {
+        color: #76A9EA;
+    }
+    .fa-youtube-play {
+        color: #F61C0D;
+    }
 }
 
 .heading {
@@ -88,6 +102,7 @@
     color: #fff;
 }
 
+// End Footer
 @include breakpoint-1200-sm {
     .heading {
         max-width: 1200px;

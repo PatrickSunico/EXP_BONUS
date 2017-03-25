@@ -35,9 +35,25 @@
       <h3 class="h3">Community</h3>
       <li><a class="footer-link" href="#"> Forum </a></li>
       <li><a class="footer-link" href="#"> Community Blog </a></li>
-      <!--Social Links here-->
-      <!--<li><a class="footer-link" href="#"> Link </a></li>
-      <li><a class="footer-link" href="#"> Link </a></li>-->
+
+      <ul class="social">
+        <li>
+          <a  class="social-links" href="#">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a  class="social-links" href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          </li>
+        <li>
+          <a  class="social-links" href="#">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+
     </ul>
   </div>
 </div>
