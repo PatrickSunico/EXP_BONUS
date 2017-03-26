@@ -698,6 +698,71 @@ nav ul li:hover ul {
           flex-direction: column;
 }
 
+.price-container {
+  position: relative;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.price-container .non-fb-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.price-container .discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #B8E986;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-container .discount h4 {
+  padding: 14px 10px;
+  color: white;
+}
+
+.price-container .price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: rgba(34, 40, 44, 0.6);
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-box;
+}
+
+.price-container .price-list h5 {
+  padding: 14px 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.price-container .price-list h5 strike {
+  color: #9E9A9A;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
 .item-grp .img-item-sm {
   display: block;
   width: 100%;

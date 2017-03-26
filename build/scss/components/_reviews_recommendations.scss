@@ -14,6 +14,57 @@
     flex-direction: column;
 }
 
+// Price Container
+.price-container {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // background-color: rgba(34, 40, 44, 0.6);
+    // padding: 14px 10px;
+    .non-fb-container {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        // padding: 14px 10px;
+    }
+    .discount {
+        display: flex;
+        flex-direction: row;
+        background-color: #B8E986;
+        align-items: center;
+        h4 {
+            padding: 14px 10px;
+            color: white;
+        }
+    }
+    .price-list {
+        display: flex;
+        width: 100%;
+        background-color: rgba(34, 40, 44, 0.6);
+        flex-basis: 100%;
+        align-items: center;
+        box-sizing: border-box;
+        h5 {
+            padding: 14px 10px;
+            color: white;
+            font-weight: bold;
+            strike {
+                color: #9E9A9A;
+                // font-family: $secondary-font;
+                font-weight: bold;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+// End Price Container
 .item-grp {
     .img-item-sm {
         display: block;
