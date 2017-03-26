@@ -1,0 +1,10 @@
+{
+    "trending": [{
+            "news_image": "../images/news/news_1.jpg"
+        },
+        {
+            "news_image": "../images/news/news_2.jpg"
+        }
+
+    ]
+}

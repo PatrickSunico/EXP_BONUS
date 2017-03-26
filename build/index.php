@@ -1,4 +1,5 @@
 <?php
+  require('includes/functions/functions.php');
   include('includes/global/head.php');
 ?>
   <?php include('includes/components/navigation.php');?>
