@@ -12,7 +12,7 @@
       <h1 class="h1">Trending</h1>
     </div>
     <ul class="trending-list">
-      <li><a href="#"> <img src="../images/trending_1.jpg" alt="trending"></a></li>
+      <?php trending_list();?>
     </ul>
   </div>
 </div>
