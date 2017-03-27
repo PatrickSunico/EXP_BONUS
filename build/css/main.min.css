@@ -162,6 +162,7 @@ img {
 .h5,
 .footer-link {
   font-family: "Avenir LT Std", sans-serif;
+  color: white;
 }
 
 .h1 {
@@ -310,34 +311,6 @@ img {
   a.btn-sharp {
     font-size: calc(70% + ((1vw - 0.48rem) * 0.486));
   }
-}
-
-.game-title {
-  font-size: 1em;
-  color: white;
-}
-
-.game-platform {
-  font-size: 0.80em;
-  color: white;
-}
-
-.h4 {
-  color: white;
-  font-weight: bold;
-  font-size: 0.80em;
-  padding: 2px;
-}
-
-.h5 {
-  color: white;
-  font-size: 0.80em;
-  padding: 2px;
-}
-
-.platform-icon [class^="icon-"],
-.platform-icon [class*="icon-"] {
-  margin: 0 6px;
 }
 
 nav {

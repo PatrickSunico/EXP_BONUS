@@ -11,6 +11,7 @@
 .h5,
 .footer-link {
     font-family: $secondary-font;
+    color: white;
 }
 
 // default mobile font sizes
@@ -42,11 +43,6 @@
     font-size: 0.80em;
 }
 
-// paragraphs styling
-// .news {
-//     color: white;
-//     font-size: 0.600em;
-// }
 .news {
     // font-size: calc(70% + ((1vw - 0.50rem) * 0.486));
     font-size: 1rem;
@@ -164,72 +160,3 @@
         font-size: calc(70% + ((1vw - 0.48rem) * 0.486));
     }
 }
-
-// new code 
-// Typography for text inside carousel
-// h4
-.game-title {
-    font-size: 1em;
-    color: white;
-}
-
-// h5
-.game-platform {
-    font-size: 0.80em;
-    color: white;
-}
-
-// Typography for pricing and discounts for features carousel
-// .h4 {
-//     // font-size: 0.90em;
-//     color: white;
-//     font-weight: bold;
-// }
-// .h5 {
-//     color: white;
-//     // font-size: 0.80em;
-// }
-.discount {
-    // padding: 6px 4px;
-}
-
-.price-list {
-    // padding: 6px 4px;
-}
-
-.h4 {
-    color: white;
-    font-weight: bold;
-    // font-size: 0.5670em;
-    font-size: 0.80em;
-    padding: 2px;
-}
-
-.h5 {
-    color: white;
-    // font-size: 0.5670em;
-    font-size: 0.80em;
-    padding: 2px;
-}
-
-.platform-icon {
-    // font-size: 0.80em;
-    // color: white;
-    [class^="icon-"],
-    [class*="icon-"] {
-        margin: 0 6px;
-    }
-}
-
-// .padding {
-//     padding: 10px 8px;
-// }
-// @include breakpoint-1200-sm {
-//     .discount {
-//         padding: 4px 8px;
-//     }
-//     .price-list {
-//         padding: 4px 8px;
-//     }
-// }
-// End
