@@ -18,8 +18,9 @@
         .swiper-slide {
             text-align: center;
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
             // text-align: center;
             // display: flex;
             // justify-content: center;

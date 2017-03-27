@@ -4,6 +4,7 @@
     z-index: 9999;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .non-fb-container {
@@ -15,8 +16,10 @@
     .discount {
         background-color: #B8E986;
         align-items: center;
+        padding: 8px;
     }
     .price-list {
+        padding: 8px;
         display: flex;
         width: 100%;
         background-color: rgba(34, 40, 44, 0.6);
@@ -29,10 +32,6 @@
             margin: 0 4px;
         }
     }
-}
-
-.padding {
-    padding: 10px 8px;
 }
 
 .bot-div {
@@ -56,6 +55,37 @@
             [class*="icon-"] {
                 margin: 0 4px;
             }
+        }
+    }
+}
+
+// end Price Container
+// Platform Features Carousel Container
+.platform {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(34, 40, 44, 0.5);
+    z-index: 9997;
+    transition: $trending-img-transition;
+    &:hover {
+        background-color: transparent !important;
+    }
+    .platform-list {
+        position: relative;
+        z-index: 9999;
+    }
+    .platform-text {
+        display: flex;
+        flex-direction: column;
+        .game-title {
+            // font-size: 1em;
+            // color: white;
         }
     }
 }

@@ -1,9 +1,16 @@
 // headings
 .h1,
-.h2,
-.h6 {
+.h2 {
     margin: 0;
     font-family: $primary-font;
+}
+
+// secondary fonts 
+.h4,
+.h3,
+.h5,
+.footer-link {
+    font-family: $secondary-font;
 }
 
 // default mobile font sizes
@@ -21,26 +28,15 @@
     color: white;
 }
 
-// secondary fonts 
-.h4,
-.h3,
-.h5,
-.footer-link {
-    font-family: $secondary-font;
-}
-
-// typography
-.h4 {
-    font-size: 0.90em;
+.h3 {
+    font-size: 1em;
     color: white;
+    text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
-.h5 {
-    color: white;
-    font-size: 0.80em;
-}
-
+// News
 .italic {
     color: white;
     font-size: 0.80em;
@@ -55,14 +51,6 @@
     // font-size: calc(70% + ((1vw - 0.50rem) * 0.486));
     font-size: 1rem;
     color: white;
-}
-
-.h3 {
-    font-size: 1em;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
 }
 
 // Social Links 
@@ -103,11 +91,11 @@
     align-items: flex-start;
     .h1 {
         flex: 1;
-        padding: 1.4500em 10px;
+        padding: 1.4500em 0;
     }
     a {
         flex: 1;
-        padding: 0.600em 10px;
+        padding: 0.600em 0;
         text-transform: uppercase;
         color: #fff;
         &:hover {
@@ -176,3 +164,72 @@
         font-size: calc(70% + ((1vw - 0.48rem) * 0.486));
     }
 }
+
+// new code 
+// Typography for text inside carousel
+// h4
+.game-title {
+    font-size: 1em;
+    color: white;
+}
+
+// h5
+.game-platform {
+    font-size: 0.80em;
+    color: white;
+}
+
+// Typography for pricing and discounts for features carousel
+// .h4 {
+//     // font-size: 0.90em;
+//     color: white;
+//     font-weight: bold;
+// }
+// .h5 {
+//     color: white;
+//     // font-size: 0.80em;
+// }
+.discount {
+    // padding: 6px 4px;
+}
+
+.price-list {
+    // padding: 6px 4px;
+}
+
+.h4 {
+    color: white;
+    font-weight: bold;
+    // font-size: 0.5670em;
+    font-size: 0.80em;
+    padding: 2px;
+}
+
+.h5 {
+    color: white;
+    // font-size: 0.5670em;
+    font-size: 0.80em;
+    padding: 2px;
+}
+
+.platform-icon {
+    // font-size: 0.80em;
+    // color: white;
+    [class^="icon-"],
+    [class*="icon-"] {
+        margin: 0 6px;
+    }
+}
+
+// .padding {
+//     padding: 10px 8px;
+// }
+// @include breakpoint-1200-sm {
+//     .discount {
+//         padding: 4px 8px;
+//     }
+//     .price-list {
+//         padding: 4px 8px;
+//     }
+// }
+// End

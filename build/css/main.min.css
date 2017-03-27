@@ -152,10 +152,16 @@ img {
 }
 
 .h1,
-.h2,
-.h6 {
+.h2 {
   margin: 0;
   font-family: "Raleway", sans-serif;
+}
+
+.h4,
+.h3,
+.h5,
+.footer-link {
+  font-family: "Avenir LT Std", sans-serif;
 }
 
 .h1 {
@@ -172,22 +178,12 @@ img {
   color: white;
 }
 
-.h4,
-.h3,
-.h5,
-.footer-link {
-  font-family: "Avenir LT Std", sans-serif;
-}
-
-.h4 {
-  font-size: 0.90em;
+.h3 {
+  font-size: 1em;
   color: white;
+  text-transform: uppercase;
   font-weight: bold;
-}
-
-.h5 {
-  color: white;
-  font-size: 0.80em;
+  letter-spacing: 2px;
 }
 
 .italic {
@@ -198,14 +194,6 @@ img {
 .news {
   font-size: 1rem;
   color: white;
-}
-
-.h3 {
-  font-size: 1em;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
 .social-links .facebook-official {
@@ -255,14 +243,14 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 1.4500em 10px;
+  padding: 1.4500em 0;
 }
 
 .heading a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0.600em 10px;
+  padding: 0.600em 0;
   text-transform: uppercase;
   color: #fff;
 }
@@ -322,6 +310,34 @@ img {
   a.btn-sharp {
     font-size: calc(70% + ((1vw - 0.48rem) * 0.486));
   }
+}
+
+.game-title {
+  font-size: 1em;
+  color: white;
+}
+
+.game-platform {
+  font-size: 0.80em;
+  color: white;
+}
+
+.h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 0.80em;
+  padding: 2px;
+}
+
+.h5 {
+  color: white;
+  font-size: 0.80em;
+  padding: 2px;
+}
+
+.platform-icon [class^="icon-"],
+.platform-icon [class*="icon-"] {
+  margin: 0 6px;
 }
 
 nav {
@@ -688,7 +704,7 @@ nav ul li:hover ul {
 }
 
 #feature-wrapper {
-  padding: 70px 10px;
+  padding: 40px 10px;
   background-image: -webkit-linear-gradient(225deg, #6D6F72 0%, #3B3C3E 100%);
   background-image: linear-gradient(-135deg, #6D6F72 0%, #3B3C3E 100%);
 }
@@ -711,6 +727,7 @@ nav ul li:hover ul {
 .item-grp .img-item-sm {
   display: block;
   width: 100%;
+  background-color: rgba(34, 40, 44, 0.5);
 }
 
 .item-grp .img-item-sm img {
@@ -755,6 +772,9 @@ nav ul li:hover ul {
 }
 
 @media only screen and (min-width: 1200px) {
+  #feature-wrapper {
+    padding: 70px 10px;
+  }
   .review_grid {
     padding: 0;
   }
@@ -796,12 +816,10 @@ nav ul li:hover ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .swiper-container.feature_carousel .swiper-wrapper .swiper-slide img {
@@ -899,6 +917,7 @@ nav ul li:hover ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .non-fb-container {
@@ -919,9 +938,11 @@ nav ul li:hover ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 8px;
 }
 
 .non-fb-container .price-list {
+  padding: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,10 +960,6 @@ nav ul li:hover ul {
   color: #9E9A9A;
   font-weight: bold;
   margin: 0 4px;
-}
-
-.padding {
-  padding: 10px 8px;
 }
 
 .bot-div {
@@ -985,6 +1002,46 @@ nav ul li:hover ul {
 .bot-div .info .h5 [class^="icon-"],
 .bot-div .info .h5 [class*="icon-"] {
   margin: 0 4px;
+}
+
+.platform {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(34, 40, 44, 0.5);
+  z-index: 9997;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.platform:hover {
+  background-color: transparent !important;
+}
+
+.platform .platform-list {
+  position: relative;
+  z-index: 9999;
+}
+
+.platform .platform-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1066,7 +1123,6 @@ nav ul li:hover ul {
 }
 
 .trending-list {
-  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
