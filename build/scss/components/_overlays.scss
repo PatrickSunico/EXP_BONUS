@@ -1,0 +1,73 @@
+// Price Container
+.top-div {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+.non-fb-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    z-index: 9998;
+    .discount {
+        background-color: #B8E986;
+        align-items: center;
+    }
+    .price-list {
+        display: flex;
+        width: 100%;
+        background-color: rgba(34, 40, 44, 0.6);
+        flex-basis: 100%;
+        align-items: center;
+        box-sizing: border-box;
+        strike {
+            color: #9E9A9A;
+            font-weight: bold;
+            margin: 0 4px;
+        }
+    }
+}
+
+.padding {
+    padding: 10px 8px;
+}
+
+.bot-div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    .info {
+        background-color: rgba(34, 40, 44, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 10px;
+        .h5 {
+            font-weight: bold;
+            color: white;
+            flex: 1;
+            [class^="icon-"],
+            [class*="icon-"] {
+                margin: 0 4px;
+            }
+        }
+    }
+}
+
+// End
+@include breakpoint-1200-sm {
+    .bot-div {
+        .info {
+            flex-direction: row;
+            .h5 {
+                font-size: 1em;
+            }
+        }
+    }
+}

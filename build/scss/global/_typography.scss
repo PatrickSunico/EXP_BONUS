@@ -1,10 +1,7 @@
-// heading
+// headings
 .h1,
 .h2,
-.h4,
-.h5,
-.h6,
-.p {
+.h6 {
     margin: 0;
     font-family: $primary-font;
 }
@@ -24,6 +21,26 @@
     color: white;
 }
 
+// secondary fonts 
+.h4,
+.h3,
+.h5,
+.footer-link {
+    font-family: $secondary-font;
+}
+
+// typography
+.h4 {
+    font-size: 0.90em;
+    color: white;
+    font-weight: bold;
+}
+
+.h5 {
+    color: white;
+    font-size: 0.80em;
+}
+
 .italic {
     color: white;
     font-size: 0.80em;
@@ -38,12 +55,6 @@
     // font-size: calc(70% + ((1vw - 0.50rem) * 0.486));
     font-size: 1rem;
     color: white;
-}
-
-// Footer 
-.h3,
-.footer-link {
-    font-family: $secondary-font;
 }
 
 .h3 {

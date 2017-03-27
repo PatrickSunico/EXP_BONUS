@@ -19,9 +19,18 @@
             text-align: center;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            // text-align: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
             img {
                 max-width: 100%;
+                opacity: .75;
+                transition: $trending-img-transition;
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
     }
