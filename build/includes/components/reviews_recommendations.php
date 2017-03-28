@@ -36,11 +36,56 @@
       </div>
       <div class="item-grp">
         <a href="#" class="img-item-sm">
-          <img src="../images/featured_images/feature-2.jpg" alt="image">
+            <div class="top-div">
+              <span class="non-fb-container">
+                <span class="discount">
+                  <h4 class="h4 featured_discount">-10%</h4>
+                </span>
+                <span class="price-list">
+                  <h5 class="h5 featured_price">$54.00 <strike>$60.00</strike></h5>
+                </span>
+              </span>
+            </div>
+            <img src="../images/featured_images/feature-2.jpg" alt="image">
+            <div class="bot-div">
+              <span class="info">
+                <h5 class="h5">Horizon Zero Dawn</h5>
+                <h5 class="h5">Reviews: 4.8 / 5</h5> 
+                <h5 class="h5 platform-icon">
+                  Platforms:
+                  <i class="icon-playstation"></i>
+                </h5>
+              </span>
+            </div>
         </a>
         <a href="#" class="img-item-sm">
+          <div class="top-div">
+            <span class="non-fb-container">
+              <span class="discount">
+                <h4 class="h4 featured_discount">-20%</h4>
+              </span>
+              <span class="price-list">
+                <h5 class="h5 featured_price">$48.00 <strike>$60.00</strike></h5>
+              </span>
+            </span>
+          </div>
           <img src="../images/featured_images/feature-3.jpg" alt="image">
+          <div class="bot-div">
+            <span class="info">
+              <h5 class="h5">Dishonored 2</h5>
+              <h5 class="h5">Reviews: 4.1 / 5</h5> 
+              <h5 class="h5 platform-icon">
+                Platforms:
+                <i class="icon-xbox"></i>
+                <i class="icon-playstation"></i>
+                <i class="icon-windows-8"></i>
+
+              </h5>
+            </span>
+          </div>
         </a>
+
+
       </div>
     </div>
 </div>

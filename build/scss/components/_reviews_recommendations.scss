@@ -20,6 +20,8 @@
             display: block;
             width: 100%;
             background-color: rgba(34, 40, 44, 0.5);
+            position: relative;
+            margin: 15px 0;
             img {
                 width: 100%;
                 height: auto;
@@ -33,6 +35,8 @@
         .img-item-lg {
             display: block;
             width: 100%;
+            position: relative;
+            margin: 15px 0;
             img {
                 width: 100%;
                 height: auto;
@@ -45,16 +49,20 @@
         }
     }
     
-    @include breakpoint-640-sm {
+    // resets
+    @include breakpoint-800-sm {
+        .item-grp {
+            .img-item-sm,
+            .img-item-lg {
+                margin: 0;
+            }
+        }
         .review_grid {
             padding: 0;
         }
         .masonry-image {
             flex-direction: row;
         }
-    }
-    
-    @include breakpoint-1200-sm {
         #feature-wrapper {
             padding: 70px 10px;
         }
@@ -69,3 +77,5 @@
             margin: 1rem auto;
         }
     }
+    
+    // @include breakpoint-1200-sm {}

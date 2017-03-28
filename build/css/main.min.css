@@ -302,6 +302,9 @@ img {
   .h2 {
     font-size: calc(70% + ((1vw - 0.48rem) * 1.389));
   }
+  .h3 {
+    font-size: calc(100% + ((1vw - 1.2rem) * 1.389));
+  }
   .p-main {
     font-size: calc(70% + ((1vw - 0.1rem) * 0.486));
   }
@@ -701,6 +704,8 @@ nav ul li:hover ul {
   display: block;
   width: 100%;
   background-color: rgba(34, 40, 44, 0.5);
+  position: relative;
+  margin: 15px 0;
 }
 
 .item-grp .img-item-sm img {
@@ -718,6 +723,8 @@ nav ul li:hover ul {
 .item-grp .img-item-lg {
   display: block;
   width: 100%;
+  position: relative;
+  margin: 15px 0;
 }
 
 .item-grp .img-item-lg img {
@@ -732,7 +739,11 @@ nav ul li:hover ul {
   opacity: 1;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 800px) {
+  .item-grp .img-item-sm,
+  .item-grp .img-item-lg {
+    margin: 0;
+  }
   .review_grid {
     padding: 0;
   }
@@ -742,9 +753,6 @@ nav ul li:hover ul {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-@media only screen and (min-width: 1200px) {
   #feature-wrapper {
     padding: 70px 10px;
   }
@@ -894,7 +902,7 @@ nav ul li:hover ul {
 }
 
 .non-fb-container {
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,7 +966,7 @@ nav ul li:hover ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%;
   padding: 10px;
@@ -970,11 +978,6 @@ nav ul li:hover ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.bot-div .info .h5 [class^="icon-"],
-.bot-div .info .h5 [class*="icon-"] {
-  margin: 0 4px;
 }
 
 .platform {
@@ -1007,25 +1010,16 @@ nav ul li:hover ul {
   z-index: 9999;
 }
 
-.platform .platform-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 800px) {
+  .non-fb-container {
+    position: absolute;
+  }
   .bot-div .info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .bot-div .info .h5 {
-    font-size: 1em;
+    position: absolute;
   }
 }
 

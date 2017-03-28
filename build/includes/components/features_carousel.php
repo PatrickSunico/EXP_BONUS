@@ -17,33 +17,31 @@
 
                 <div class="platform">
                     <div class="platform-list">
-                        <span class="platform-text">
-                            <h4 class="h4 game-title">Nier Automata</h4>
-                            <h5 class="h5 platform-icon">
-                                <i class="icon-playstation"></i>
-                                <i class="icon-windows-8"></i>
-                            </h5>
-                        </span>
+                        <h4 class="h4 game-title">Nier Automata</h4>
+                        <h5 class="h5 platform-icon">
+                            <i class="icon-playstation"></i>
+                            <i class="icon-windows-8"></i>
+                        </h5>
                     </div>
                 </div>
             <!--end top-div-->
 
-                <img src="../images/carousel_featurette_1.jpg" alt="">
+                <img src="../images/carousel_feature/carousel_featurette_1.jpg" alt="">
             </a>
             <a href="#" class="swiper-slide">
-                <img src="../images/carousel_featurette_2.jpg" alt="">
+                <img src="../images/carousel_feature/carousel_featurette_2.jpg" alt="">
             </a>
             <a href="#" class="swiper-slide">
-                <img src="../images/carousel_featurette_3.jpg" alt="">
+                <img src="../images/carousel_feature/carousel_featurette_3.jpg" alt="">
             </a>
             <a href="#" class="swiper-slide">
-                <img src="../images/carousel_featurette_4.jpg" alt="">
+                <img src="../images/carousel_feature/carousel_featurette_4.jpg" alt="">
             </a>
             <a href="#" class="swiper-slide">
-                <img src="../images/carousel_featurette_3.jpg" alt="">
+                <img src="../images/carousel_feature/carousel_featurette_5.jpg" alt="">
             </a>
             <a href="#" class="swiper-slide">
-                <img src="../images/carousel_featurette_4.jpg" alt="">
+                <img src="../images/carousel_feature/carousel_featurette_6.jpg" alt="">
             </a>
         </div>
         <div class="swiper-pagination"></div>
