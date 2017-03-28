@@ -37,6 +37,14 @@
     letter-spacing: 2px;
 }
 
+.h4 {
+    font-size: 1em;
+}
+
+.h5 {
+    font-size: 0.80em;
+}
+
 // News
 .italic {
     color: white;
@@ -44,7 +52,6 @@
 }
 
 .news {
-    // font-size: calc(70% + ((1vw - 0.50rem) * 0.486));
     font-size: 1rem;
     color: white;
 }
@@ -142,16 +149,6 @@
     .h3 {
         font-size: calc(100% + ((1vw - 1.2rem) * 1.389));
     }
-    // .h5 {
-    //     font-size: calc(100% + ((1vw - 1.2rem) * 1.389));
-    // }
-    // paragraph main content
-    .p-main {
-        font-size: calc(70% + ((1vw - 0.1rem) * 0.486));
-    }
-    // .news {
-    //     font-size: calc(70% + ((1vw - 0.50rem) * 0.486));
-    // }
     .italic {
         font-size: calc(70% + ((1vw - 1rem) * 0.486));
     }

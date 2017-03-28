@@ -39,10 +39,10 @@
             <div class="top-div">
               <span class="non-fb-container">
                 <span class="discount">
-                  <h4 class="h4 featured_discount">-10%</h4>
+                  <h4 class="h4">-10%</h4>
                 </span>
                 <span class="price-list">
-                  <h5 class="h5 featured_price">$54.00 <strike>$60.00</strike></h5>
+                  <h5 class="h5">$54.00 <strike>$60.00</strike></h5>
                 </span>
               </span>
             </div>
@@ -62,10 +62,10 @@
           <div class="top-div">
             <span class="non-fb-container">
               <span class="discount">
-                <h4 class="h4 featured_discount">-20%</h4>
+                <h4 class="h4">-20%</h4>
               </span>
               <span class="price-list">
-                <h5 class="h5 featured_price">$48.00 <strike>$60.00</strike></h5>
+                <h5 class="h5">$48.00 <strike>$60.00</strike></h5>
               </span>
             </span>
           </div>
@@ -79,7 +79,6 @@
                 <i class="icon-xbox"></i>
                 <i class="icon-playstation"></i>
                 <i class="icon-windows-8"></i>
-
               </h5>
             </span>
           </div>

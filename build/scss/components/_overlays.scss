@@ -16,10 +16,12 @@
     .discount {
         background-color: #B8E986;
         align-items: center;
-        padding: 8px;
+        // padding: 10px;
+        padding: 8px 6px;
     }
     .price-list {
-        padding: 8px;
+        // padding: 8px;
+        padding: 0 6px;
         display: flex;
         width: 100%;
         background-color: rgba(34, 40, 44, 0.6);

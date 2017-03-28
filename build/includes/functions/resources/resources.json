@@ -1,0 +1,225 @@
+{
+    "main_carousel": [{
+        "img": "../images/main_carousel_banner/banner_1.jpg"
+    }, {
+        "img": "../images/main_carousel_banner/banner_2.jpg"
+    }, {
+        "img": "../images/main_carousel_banner/banner_3.jpg"
+    }],
+    "feature-carousel": [{
+            "discount_percent": "15",
+            "img": "../images/carousel_feature/carousel_featurette_1.jpg",
+            "full_price": "50.00",
+            "game_name": "Nier Automata",
+            "platform": {
+                "ps4": "icon-playstation",
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "discount_percent": "20",
+            "img": "../images/carousel_feature/carousel_featurette_2.jpg",
+            "full_price": "56.00",
+            "game_name": "Final Fantasy XV",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox"
+            }
+        }, {
+            "discount_percent": "20",
+            "img": "../images/carousel_feature/carousel_featurette_3.jpg",
+            "full_price": "58.00",
+            "game_name": "Doom",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+
+            }
+        }, {
+            "discount_percent": "15",
+            "img": "../images/carousel_feature/carousel_featurette_4.jpg",
+            "full_price": "42.00",
+            "game_name": "Resident Evil 6",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "discount_percent": "15",
+            "img": "../images/carousel_feature/carousel_featurette_5.jpg",
+            "full_price": "50.00",
+            "game_name": "Night in the Woods",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+
+            }
+        }, {
+            "discount_percent": "15",
+            "img": "../images/carousel_feature/carousel_featurette_6.jpg",
+            "full_price": "50.00",
+            "game_name": "Rocket League",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+
+            }
+        }
+
+    ],
+    "indie_releases": [{
+        "game_name": "Don't Starve Together",
+        "img": "../images/indie_releases/indie_release_1.jpg",
+        "platform": {
+            "ps4": "icon-playstation",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Hollow Knight",
+        "img": "../images/indie_releases/indie_release_2.jpg",
+        "platform": {
+            "switch": "icon-switch",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Stardew Valley",
+        "img": "../images/indie_releases/indie_release_3.jpg",
+        "platform": {
+            "ps4": "icon-playstation",
+            "xbox": "icon-xbox",
+            "switch": "icon-switch",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Fez",
+        "img": "../images/indie_releases/indie_release_4.jpg",
+        "platform": {
+            "ps4": "icon-playstation",
+            "xbox": "icon-xbox",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Spelunky",
+        "img": "../images/indie_releases/indie_release_5.jpg",
+        "platform": {
+            "ps4": "icon-playstation",
+            "xbox": "icon-xbox",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Faster Than Light",
+        "img": "../images/indie_releases/indie_release_6.jpg",
+        "platform": {
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Hyper Light Drifter",
+        "img": "../images/indie_releases/indie_release_7.jpg",
+        "platform": {
+            "ps4": "icon-playstation",
+            "xbox": "icon-xbox",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Bastion",
+        "img": "../images/indie_releases/indie_release_8.jpg",
+        "platform": {
+            "ps4": "icon-playstation",
+            "xbox": "icon-xbox",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Owlboy",
+        "img": "../images/indie_releases/indie_release_9.jpg",
+        "platform": {
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }, {
+        "game_name": "Super Meatboy",
+        "img": "../images/indie_releases/indie_release_10.jpg",
+        "platform": {
+            "ps4": "icon-playstation",
+            "xbox": "icon-xbox",
+            "wiiu": "icon-wiiu",
+            "windows": "icon-windows-8",
+            "macosx": "icon-mac"
+        }
+    }],
+    "news": [{
+            "news_heading": "Heading 1",
+            "date": "Feb, 18 2017",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+            "news_image": "../images/news/news_1.jpg",
+            "alt": "image-1"
+        }, {
+            "news_heading": "Heading 2",
+            "date": "Feb, 17 2017",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "news_image": "../images/news/news_2.jpg",
+            "alt": "image-2"
+        },
+        {
+            "news_heading": "Heading 3",
+            "date": "Feb, 16 2017",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+            "news_image": "../images/news/news_3.jpg",
+            "alt": "image-3"
+        }, {
+            "news_heading": "Heading 4",
+            "date": "Feb, 15 2017",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+            "news_image": "../images/news/news_4.jpg",
+            "alt": "image-4"
+        }, {
+            "news_heading": "Heading 5",
+            "date": "Feb, 14 2017",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam",
+            "news_image": "../images/news/news_5.jpg",
+            "alt": "image-5"
+        }
+
+    ],
+    "trending": [{
+            "trending_image": "../images/trending/trending_1.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_2.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_3.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_4.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_5.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_6.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_7.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_8.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_9.jpg"
+        },
+        {
+            "trending_image": "../images/trending/trending_10.jpg"
+        }
+    ]
+}

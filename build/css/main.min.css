@@ -187,6 +187,14 @@ img {
   letter-spacing: 2px;
 }
 
+.h4 {
+  font-size: 1em;
+}
+
+.h5 {
+  font-size: 0.80em;
+}
+
 .italic {
   color: white;
   font-size: 0.80em;
@@ -304,9 +312,6 @@ img {
   }
   .h3 {
     font-size: calc(100% + ((1vw - 1.2rem) * 1.389));
-  }
-  .p-main {
-    font-size: calc(70% + ((1vw - 0.1rem) * 0.486));
   }
   .italic {
     font-size: calc(70% + ((1vw - 1rem) * 0.486));
@@ -919,11 +924,11 @@ nav ul li:hover ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px;
+  padding: 8px 6px;
 }
 
 .non-fb-container .price-list {
-  padding: 8px;
+  padding: 0 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1079,6 +1084,10 @@ nav ul li:hover ul {
   display: none;
 }
 
+.object .media-body .read-more {
+  display: block;
+}
+
 .object:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1199,6 +1208,9 @@ nav ul li:hover ul {
   }
   .object .media-body p.news {
     display: block;
+  }
+  .object .media-body .read-more {
+    display: none;
   }
   .trending-list li {
     -ms-flex-preferred-size: 100%;

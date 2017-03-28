@@ -1,53 +1,95 @@
 
-<!--Top Reviews and Recommendations-->
-<!--echo isset($foo) ? 'true' : 'false'; // false
-echo array_key_exists('foo', compact('foo')) ? 'true' : 'false'; // true
-echo isset($bar) ? 'true' : 'false'; // false
-echo array_key_exists('bar', compact('bar')) ? 'true' : 'false'; // false-->
-
+<!--Main Carousel-->
 <?php 
-  // function review_grid() {
-  //     $grid_data = file_get_contents("includes/functions/resources/news.json");
-  //     $grid_panels = json_decode($grid_data,true);
-  //     foreach ($grid_panels['grid'] as $grid_panel) :
+  function main_carousel() {
+    $main_carousel_data = file_get_contents("includes/functions/resources/resources.json");
+    $main_carousel_panels = json_decode($main_carousel_data,true);
+        foreach($main_carousel_panels['main_carousel'] as $main_carousel_panel):
 
-
-  //     $large_img = $grid_panel['img_lg'];
-  //     $small_img = $grid_panel['img_sm'];
-  //     if(isset($large_img) ){
-  //       echo "Exists";
-  //     }
-  //     if (isset($small_lg)) {
-  //       echo "Exists";
-  //     } else {
-  //       echo "Does not Exist";
-  //     }
-  //   endforeach;
-  // }
 ?>
-
-<?php 
-  function carousel_images() {
-    $dirname = "images/carousel_feature/";
-    $carousel_images = glob($dirname."*.jpg");
-    foreach($carousel_images as $carousel_image):
-?>
-
+    <div class="swiper-slide">
+        <img src="<?php echo $main_carousel_panel['img'];?>" alt="">
+    </div>
 <?php 
     endforeach;
   }
 ?>
 
+<!--Top Reviews and Recommendations-->
+<?php 
+  function carousel_images() {
+    // discount_price = full_price * discount_percent / 100;
+    // discounted_price = full_price - discount_price;
+    $carousel_resources = file_get_contents("includes/functions/resources/resources.json");
+    $carousel_panels = json_decode($carousel_resources,true);
+    foreach($carousel_panels['feature-carousel'] as $carousel_panel):
+    $discount_price = $carousel_panel['full_price'] * $carousel_panel['discount_percent'] / 100;
+    $full_price = $carousel_panel['full_price'];
+    $discounted_price = $full_price - $discount_price;
+?>
+
+    <a href="#" class="swiper-slide">
+        <div class="non-fb-container"> <!--non-fb-container-->
+            <span class="discount">
+                <h4 class="h4 featured_discount">
+                  <?php echo "-" . $carousel_panel['discount_percent'] . "%" ; ?>
+                </h4>
+            </span>
+            <span class="price-list">
+                <h5 class="h5">
+                  <?php echo "$" . number_format(round($discounted_price), 2); ?>
+                </h5>
+            </span>
+        </div>
+
+        <div class="platform">
+            <div class="platform-list">
+                <h4 class="h4"><?php echo $carousel_panel['game_name'];?></h4>
+                <h5 class="h5">
+                  <?php 
+                    foreach($carousel_panel['platform'] as $carousel_icons) : 
+                  ?>
+                    <i class="<?php echo $carousel_icons; ?>"></i>
+                  <?php 
+                    endforeach;
+                  ?>
+                </h5>
+            </div>
+        </div> 
+        <img src="<?php echo $carousel_panel['img'];?>" alt="">
+    </a>
+<?php 
+    endforeach;
+  }
+?>
+
+
 <!--Indie Releases-->
 <?php 
   function indie_images() {
-    $dirname = "images/indie_releases/";
-    $indie_images = glob($dirname."*.jpg");
-    foreach($indie_images as $indie_image) :
+    $indie_carousel = file_get_contents("includes/functions/resources/resources.json");
+    $indie_games = json_decode($indie_carousel,true);
+    // $dirname = "images/indie_releases/";
+    // $indie_images = glob($dirname."*.jpg");
+    foreach($indie_games['indie_releases'] as $indie_game) :
 ?>
-    <div class="swiper-slide">
-      <img src="<?php echo $indie_image?>" alt="">
-    </div>
+    <a href="#" class="swiper-slide">
+      <img src="<?php echo $indie_game['img'];?>" alt="">
+        <div class="platform">
+          <div class="platform-list">
+              <h4 class="h4"><?php echo $indie_game['game_name'];?></h4>
+                <h5 class="h5">
+                  <?php 
+                    foreach($indie_game['platform'] as $carousel_icons) : 
+                  ?>
+                    <i class="<?php echo $carousel_icons; ?>"></i>
+                  <?php 
+                    endforeach;
+                  ?>
+                </h5>
+          </div>
+        </div> 
+    </a>
 <?php 
     endforeach;
   }
@@ -57,12 +99,11 @@ echo array_key_exists('bar', compact('bar')) ? 'true' : 'false'; // false-->
 
 <?php 
   function news() {
-    $news_resources = file_get_contents("includes/functions/resources/news.json");
+    $news_resources = file_get_contents("includes/functions/resources/resources.json");
     $news_decode = json_decode($news_resources,true);
     $dirname = "images/news/";
     $news_images = glob($dirname."*.jpg");
     foreach ($news_decode['news'] as $news_article) :
-      // foreach($news_images as $news_image):
 ?>
 
   <a href="#" class="object">
@@ -79,10 +120,10 @@ echo array_key_exists('bar', compact('bar')) ? 'true' : 'false'; // false-->
       <p class="news">
         <?php echo $news_article['paragraph'];?>
       </p>
+      
     </div>
   </a>
 <?php 
-      // endforeach;
     endforeach;
   }
 ?>
@@ -90,8 +131,8 @@ echo array_key_exists('bar', compact('bar')) ? 'true' : 'false'; // false-->
 
 <?php 
   function trending_list() {
-    $trending = file_get_contents("includes/functions/resources/news.json");
-    $trending_panels = json_decode($trending,true);
+    $trending_resources = file_get_contents("includes/functions/resources/resources.json");
+    $trending_panels = json_decode($trending_resources,true);
     foreach ($trending_panels['trending'] as $trending_panel) :
 ?>
   <li><a href="#"> <img src="<?php echo $trending_panel['trending_image']; ?>" alt="trending"></a></li>

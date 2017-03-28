@@ -28,6 +28,9 @@
             p.news {
                 display: none;
             }
+            .read-more {
+                display: block;
+            }
         }
         &:hover {
             box-shadow: $box-shadow-hover;
@@ -125,6 +128,9 @@
                 flex: 2;
                 p.news {
                     display: block;
+                }
+                .read-more {
+                    display: none;
                 }
             }
         }
