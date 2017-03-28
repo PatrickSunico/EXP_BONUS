@@ -205,7 +205,7 @@ img {
   color: white;
 }
 
-.social-links .facebook-official {
+.social-links .fa-facebook-official {
   color: #4A90E2;
 }
 
@@ -806,6 +806,7 @@ nav ul li:hover ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .swiper-container.feature_carousel .swiper-wrapper .swiper-slide img {
@@ -985,34 +986,41 @@ nav ul li:hover ul {
           flex: 1;
 }
 
+.relative-overlay {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: block;
+}
+
 .platform {
+  display: block;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   bottom: 0;
   top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9997;
   margin: 0 auto;
   width: 100%;
-  background-color: rgba(34, 40, 44, 0.5);
-  z-index: 9997;
   -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: rgba(34, 40, 44, 0.8);
+  opacity: 0.75;
 }
 
 .platform:hover {
   background-color: transparent !important;
+  opacity: 1;
 }
 
 .platform .platform-list {
   position: relative;
-  z-index: 9999;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 800px) {

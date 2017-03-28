@@ -70,6 +70,126 @@
         }
 
     ],
+    "upcoming_releases": [{
+            "game_name": "Yooka Laylee",
+            "img": "../images/upcoming_releases/upcoming_releases_1.jpg",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "switch": "icon-switch",
+                "windows": "icon-windows-8",
+                "macosx": "icon-mac"
+            }
+        },
+        {
+            "game_name": "The Bard's Tale IV",
+            "img": "../images/upcoming_releases/upcoming_releases_2.jpg",
+            "platform": {
+                "windows": "icon-windows-8",
+                "macosx": "icon-mac"
+            }
+        },
+        {
+            "game_name": "Splatoon 2",
+            "img": "../images/upcoming_releases/upcoming_releases_3.jpg",
+            "platform": {
+                "switch": "icon-switch"
+            }
+        },
+        {
+            "game_name": "Below",
+            "img": "../images/upcoming_releases/upcoming_releases_4.jpg",
+            "platform": {
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "game_name": "Cuphead",
+            "img": "../images/upcoming_releases/upcoming_releases_5.jpg",
+            "platform": {
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "game_name": "Read Dead Redemption 2",
+            "img": "../images/upcoming_releases/upcoming_releases_6.jpg",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox"
+            }
+        }, {
+            "game_name": "The Fractured <br> But Whole",
+            "img": "../images/upcoming_releases/upcoming_releases_7.jpg",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "game_name": "Marvel vs Capcom Infinite",
+            "img": "../images/upcoming_releases/upcoming_releases_8.jpg",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "game_name": "Days Gone",
+            "img": "../images/upcoming_releases/upcoming_releases_9.jpg",
+            "platform": {
+                "ps4": "icon-playstation"
+            }
+        }, {
+            "game_name": "Quake Champions",
+            "img": "../images/upcoming_releases/upcoming_releases_10.jpg",
+            "platform": {
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "game_name": "State of Decay",
+            "img": "../images/upcoming_releases/upcoming_releases_11.jpg",
+            "platform": {
+                "ps4": "icon-playstation"
+            }
+        }, {
+            "game_name": "Shadow of War",
+            "img": "../images/upcoming_releases/upcoming_releases_12.jpg",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        },
+        {
+            "game_name": "Prey",
+            "img": "../images/upcoming_releases/upcoming_releases_13.jpg",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        }, {
+            "game_name": "Crash Bandicoot <br> N.sane Trilogy",
+            "img": "../images/upcoming_releases/upcoming_releases_14.jpg",
+            "platform": {
+                "ps4": "icon-playstation"
+            }
+        }, {
+            "game_name": "Persona 5",
+            "img": "../images/upcoming_releases/upcoming_releases_15.jpg",
+            "platform": {
+                "ps4": "icon-playstation"
+            }
+        }, {
+            "game_name": "Tekken 7",
+            "img": "../images/upcoming_releases/upcoming_releases_16.jpg",
+            "platform": {
+                "ps4": "icon-playstation",
+                "xbox": "icon-xbox",
+                "windows": "icon-windows-8"
+            }
+        }
+    ],
     "indie_releases": [{
         "game_name": "Don't Starve Together",
         "img": "../images/indie_releases/indie_release_1.jpg",
@@ -192,34 +312,63 @@
 
     ],
     "trending": [{
-            "trending_image": "../images/trending/trending_1.jpg"
+            "img": "../images/trending/trending_1.jpg",
+            "title": "Watch Dogs 2"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_2.jpg"
+            "img": "../images/trending/trending_2.jpg",
+            "title": "Injustice 2"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_3.jpg"
+            "img": "../images/trending/trending_3.jpg",
+            "title": "Dark Souls 3 Deluxe Edition"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_4.jpg"
+            "img": "../images/trending/trending_4.jpg",
+            "title": "Destiny"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_5.jpg"
+            "img": "../images/trending/trending_5.jpg",
+            "title": "Battlefield 1"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_6.jpg"
+            "img": "../images/trending/trending_6.jpg",
+            "title": "Splatoon 2"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_7.jpg"
+            "img": "../images/trending/trending_7.jpg",
+            "title": "Deadrising 4"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_8.jpg"
+            "img": "../images/trending/trending_8.jpg",
+            "title": "Overwatch"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_9.jpg"
+            "img": "../images/trending/trending_9.jpg",
+            "title": "World of Warcraft: Legion"
+
         },
+
         {
-            "trending_image": "../images/trending/trending_10.jpg"
+            "img": "../images/trending/trending_10.jpg",
+            "title": "Nioh"
+
         }
     ]
 }
