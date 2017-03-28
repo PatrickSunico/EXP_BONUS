@@ -799,14 +799,6 @@ nav ul li:hover ul {
 
 .swiper-container.feature_carousel .swiper-wrapper .swiper-slide {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
 }
 
 .swiper-container.feature_carousel .swiper-wrapper .swiper-slide img {
