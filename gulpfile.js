@@ -23,7 +23,8 @@ var rawPaths = {
     php: './build/includes/*.php',
     image: './build/images/**/*.{svg,png,jpeg,jpg,gif}',
     js: './build/js/*.js',
-    fonts: './build/fonts/**/*.{eot,ttf,woff,woff2,svg}'
+    fonts: './build/fonts/**/*.{eot,ttf,woff,woff2,svg}',
+    vendor: './build/vendor/js/**/*.js'
 };
 
 // Build Out 
@@ -132,4 +133,7 @@ gulp.task('watch', function() {
     gulp.watch(rawPaths.index).on('change', browserSync.reload);
 });
 
+// Dist Build System
+gulp.task('dist', ['php2html', 'imagemin', 'fontmin', 'sass', 'uglify']);
+// Build System
 gulp.task('default', ['browser-sync', 'sass', 'watch']);
