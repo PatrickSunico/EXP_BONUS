@@ -1,14 +1,14 @@
 {
     "main_carousel": [{
-        "img": "../images/main_carousel_banner/banner_1.jpg"
+        "img": "images/main_carousel_banner/banner_1.jpg "
     }, {
-        "img": "../images/main_carousel_banner/banner_2.jpg"
+        "img": "images/main_carousel_banner/banner_2.jpg"
     }, {
-        "img": "../images/main_carousel_banner/banner_3.jpg"
+        "img": "images/main_carousel_banner/banner_3.jpg"
     }],
     "feature-carousel": [{
             "discount_percent": "15",
-            "img": "../images/carousel_feature/carousel_featurette_1.jpg",
+            "img": "images/carousel_feature/carousel_featurette_1.jpg",
             "full_price": "50.00",
             "game_name": "Nier Automata",
             "platform": {
@@ -17,7 +17,7 @@
             }
         }, {
             "discount_percent": "20",
-            "img": "../images/carousel_feature/carousel_featurette_2.jpg",
+            "img": "images/carousel_feature/carousel_featurette_2.jpg",
             "full_price": "56.00",
             "game_name": "Final Fantasy XV",
             "platform": {
@@ -26,7 +26,7 @@
             }
         }, {
             "discount_percent": "20",
-            "img": "../images/carousel_feature/carousel_featurette_3.jpg",
+            "img": "images/carousel_feature/carousel_featurette_3.jpg",
             "full_price": "58.00",
             "game_name": "Doom",
             "platform": {
@@ -37,7 +37,7 @@
             }
         }, {
             "discount_percent": "15",
-            "img": "../images/carousel_feature/carousel_featurette_4.jpg",
+            "img": "images/carousel_feature/carousel_featurette_4.jpg",
             "full_price": "42.00",
             "game_name": "Resident Evil 6",
             "platform": {
@@ -47,7 +47,7 @@
             }
         }, {
             "discount_percent": "15",
-            "img": "../images/carousel_feature/carousel_featurette_5.jpg",
+            "img": "images/carousel_feature/carousel_featurette_5.jpg",
             "full_price": "50.00",
             "game_name": "Night in the Woods",
             "platform": {
@@ -58,7 +58,7 @@
             }
         }, {
             "discount_percent": "15",
-            "img": "../images/carousel_feature/carousel_featurette_6.jpg",
+            "img": "images/carousel_feature/carousel_featurette_6.jpg",
             "full_price": "50.00",
             "game_name": "Rocket League",
             "platform": {
@@ -72,7 +72,7 @@
     ],
     "upcoming_releases": [{
             "game_name": "Yooka Laylee",
-            "img": "../images/upcoming_releases/upcoming_releases_1.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_1.jpg",
             "platform": {
                 "ps4": "icon-playstation",
                 "xbox": "icon-xbox",
@@ -83,7 +83,7 @@
         },
         {
             "game_name": "The Bard's Tale IV",
-            "img": "../images/upcoming_releases/upcoming_releases_2.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_2.jpg",
             "platform": {
                 "windows": "icon-windows-8",
                 "macosx": "icon-mac"
@@ -91,35 +91,35 @@
         },
         {
             "game_name": "Splatoon 2",
-            "img": "../images/upcoming_releases/upcoming_releases_3.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_3.jpg",
             "platform": {
                 "switch": "icon-switch"
             }
         },
         {
             "game_name": "Below",
-            "img": "../images/upcoming_releases/upcoming_releases_4.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_4.jpg",
             "platform": {
                 "xbox": "icon-xbox",
                 "windows": "icon-windows-8"
             }
         }, {
             "game_name": "Cuphead",
-            "img": "../images/upcoming_releases/upcoming_releases_5.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_5.jpg",
             "platform": {
                 "xbox": "icon-xbox",
                 "windows": "icon-windows-8"
             }
         }, {
             "game_name": "Read Dead Redemption 2",
-            "img": "../images/upcoming_releases/upcoming_releases_6.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_6.jpg",
             "platform": {
                 "ps4": "icon-playstation",
                 "xbox": "icon-xbox"
             }
         }, {
             "game_name": "The Fractured <br> But Whole",
-            "img": "../images/upcoming_releases/upcoming_releases_7.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_7.jpg",
             "platform": {
                 "ps4": "icon-playstation",
                 "xbox": "icon-xbox",
@@ -127,7 +127,7 @@
             }
         }, {
             "game_name": "Marvel vs Capcom Infinite",
-            "img": "../images/upcoming_releases/upcoming_releases_8.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_8.jpg",
             "platform": {
                 "ps4": "icon-playstation",
                 "xbox": "icon-xbox",
@@ -135,25 +135,25 @@
             }
         }, {
             "game_name": "Days Gone",
-            "img": "../images/upcoming_releases/upcoming_releases_9.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_9.jpg",
             "platform": {
                 "ps4": "icon-playstation"
             }
         }, {
             "game_name": "Quake Champions",
-            "img": "../images/upcoming_releases/upcoming_releases_10.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_10.jpg",
             "platform": {
                 "windows": "icon-windows-8"
             }
         }, {
             "game_name": "State of Decay",
-            "img": "../images/upcoming_releases/upcoming_releases_11.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_11.jpg",
             "platform": {
                 "ps4": "icon-playstation"
             }
         }, {
             "game_name": "Shadow of War",
-            "img": "../images/upcoming_releases/upcoming_releases_12.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_12.jpg",
             "platform": {
                 "ps4": "icon-playstation",
                 "xbox": "icon-xbox",
@@ -162,7 +162,7 @@
         },
         {
             "game_name": "Prey",
-            "img": "../images/upcoming_releases/upcoming_releases_13.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_13.jpg",
             "platform": {
                 "ps4": "icon-playstation",
                 "xbox": "icon-xbox",
@@ -170,19 +170,19 @@
             }
         }, {
             "game_name": "Crash Bandicoot <br> N.sane Trilogy",
-            "img": "../images/upcoming_releases/upcoming_releases_14.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_14.jpg",
             "platform": {
                 "ps4": "icon-playstation"
             }
         }, {
             "game_name": "Persona 5",
-            "img": "../images/upcoming_releases/upcoming_releases_15.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_15.jpg",
             "platform": {
                 "ps4": "icon-playstation"
             }
         }, {
             "game_name": "Tekken 7",
-            "img": "../images/upcoming_releases/upcoming_releases_16.jpg",
+            "img": "images/upcoming_releases/upcoming_releases_16.jpg",
             "platform": {
                 "ps4": "icon-playstation",
                 "xbox": "icon-xbox",
@@ -192,7 +192,7 @@
     ],
     "indie_releases": [{
         "game_name": "Don't Starve Together",
-        "img": "../images/indie_releases/indie_release_1.jpg",
+        "img": "images/indie_releases/indie_release_1.jpg",
         "platform": {
             "ps4": "icon-playstation",
             "windows": "icon-windows-8",
@@ -200,7 +200,7 @@
         }
     }, {
         "game_name": "Hollow Knight",
-        "img": "../images/indie_releases/indie_release_2.jpg",
+        "img": "images/indie_releases/indie_release_2.jpg",
         "platform": {
             "switch": "icon-switch",
             "windows": "icon-windows-8",
@@ -208,7 +208,7 @@
         }
     }, {
         "game_name": "Stardew Valley",
-        "img": "../images/indie_releases/indie_release_3.jpg",
+        "img": "images/indie_releases/indie_release_3.jpg",
         "platform": {
             "ps4": "icon-playstation",
             "xbox": "icon-xbox",
@@ -218,7 +218,7 @@
         }
     }, {
         "game_name": "Fez",
-        "img": "../images/indie_releases/indie_release_4.jpg",
+        "img": "images/indie_releases/indie_release_4.jpg",
         "platform": {
             "ps4": "icon-playstation",
             "xbox": "icon-xbox",
@@ -227,7 +227,7 @@
         }
     }, {
         "game_name": "Spelunky",
-        "img": "../images/indie_releases/indie_release_5.jpg",
+        "img": "images/indie_releases/indie_release_5.jpg",
         "platform": {
             "ps4": "icon-playstation",
             "xbox": "icon-xbox",
@@ -236,14 +236,14 @@
         }
     }, {
         "game_name": "Faster Than Light",
-        "img": "../images/indie_releases/indie_release_6.jpg",
+        "img": "images/indie_releases/indie_release_6.jpg",
         "platform": {
             "windows": "icon-windows-8",
             "macosx": "icon-mac"
         }
     }, {
         "game_name": "Hyper Light Drifter",
-        "img": "../images/indie_releases/indie_release_7.jpg",
+        "img": "images/indie_releases/indie_release_7.jpg",
         "platform": {
             "ps4": "icon-playstation",
             "xbox": "icon-xbox",
@@ -252,7 +252,7 @@
         }
     }, {
         "game_name": "Bastion",
-        "img": "../images/indie_releases/indie_release_8.jpg",
+        "img": "images/indie_releases/indie_release_8.jpg",
         "platform": {
             "ps4": "icon-playstation",
             "xbox": "icon-xbox",
@@ -261,14 +261,14 @@
         }
     }, {
         "game_name": "Owlboy",
-        "img": "../images/indie_releases/indie_release_9.jpg",
+        "img": "images/indie_releases/indie_release_9.jpg",
         "platform": {
             "windows": "icon-windows-8",
             "macosx": "icon-mac"
         }
     }, {
         "game_name": "Super Meatboy",
-        "img": "../images/indie_releases/indie_release_10.jpg",
+        "img": "images/indie_releases/indie_release_10.jpg",
         "platform": {
             "ps4": "icon-playstation",
             "xbox": "icon-xbox",
@@ -281,86 +281,86 @@
             "news_heading": "Heading 1",
             "date": "Feb, 18 2017",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-            "news_image": "../images/news/news_1.jpg",
+            "news_image": "images/news/news_1.jpg",
             "alt": "image-1"
         }, {
             "news_heading": "Heading 2",
             "date": "Feb, 17 2017",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "news_image": "../images/news/news_2.jpg",
+            "news_image": "images/news/news_2.jpg",
             "alt": "image-2"
         },
         {
             "news_heading": "Heading 3",
             "date": "Feb, 16 2017",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-            "news_image": "../images/news/news_3.jpg",
+            "news_image": "images/news/news_3.jpg",
             "alt": "image-3"
         }, {
             "news_heading": "Heading 4",
             "date": "Feb, 15 2017",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-            "news_image": "../images/news/news_4.jpg",
+            "news_image": "images/news/news_4.jpg",
             "alt": "image-4"
         }, {
             "news_heading": "Heading 5",
             "date": "Feb, 14 2017",
             "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ed do eiusmod tempor incididunt ut labore et dolore magna aliqua veniam",
-            "news_image": "../images/news/news_5.jpg",
+            "news_image": "images/news/news_5.jpg",
             "alt": "image-5"
         }
 
     ],
     "trending": [{
-            "img": "../images/trending/trending_1.jpg",
+            "img": "images/trending/trending_1.jpg",
             "title": "Watch Dogs 2"
 
         },
 
         {
-            "img": "../images/trending/trending_2.jpg",
+            "img": "images/trending/trending_2.jpg",
             "title": "Injustice 2"
 
         },
 
         {
-            "img": "../images/trending/trending_3.jpg",
+            "img": "images/trending/trending_3.jpg",
             "title": "Dark Souls 3 Deluxe Edition"
 
         },
 
         {
-            "img": "../images/trending/trending_4.jpg",
+            "img": "images/trending/trending_4.jpg",
             "title": "Destiny"
 
         },
 
         {
-            "img": "../images/trending/trending_5.jpg",
+            "img": "images/trending/trending_5.jpg",
             "title": "Battlefield 1"
 
         },
 
         {
-            "img": "../images/trending/trending_6.jpg",
+            "img": "images/trending/trending_6.jpg",
             "title": "Splatoon 2"
 
         },
 
         {
-            "img": "../images/trending/trending_7.jpg",
+            "img": "images/trending/trending_7.jpg",
             "title": "Deadrising 4"
 
         },
 
         {
-            "img": "../images/trending/trending_8.jpg",
+            "img": "images/trending/trending_8.jpg",
             "title": "Overwatch"
 
         },
 
         {
-            "img": "../images/trending/trending_9.jpg",
+            "img": "images/trending/trending_9.jpg",
             "title": "World of Warcraft: Legion"
 
         },

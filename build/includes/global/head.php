@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
         <script src="js/modernizr.min.js"></script>
-        <link rel="stylesheet" media="all" href="/css/main.min.css">
+        <link rel="stylesheet" media="all" href="css/main.min.css">
 
   </head>
   <body>

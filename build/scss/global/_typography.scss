@@ -23,7 +23,7 @@
 }
 
 .h2 {
-    font-size: 0.980em;
+    font-size: 1em;
     font-weight: bold;
     text-transform: capitalize;
     color: white;
@@ -83,6 +83,9 @@
         font-family: $secondary-font;
         font-size: 0.80em;
     }
+    .h2 {
+        font-size: 1.6em;
+    }
 }
 
 // End Footer Styles
@@ -133,23 +136,3 @@
         }
     }
 }
-
-// responsive fonts
-
-/* 1em @ 48em (640px) increasing to 2em @ 120em (1920px) */
-
-// @include breakpoint-1200-sm {
-//     // main headings
-//     .h1 {
-//         font-size: calc(100% + ((1vw - 0.80rem) * 1.389));
-//     }
-//     .h2 {
-//         font-size: calc(70% + ((1vw - 0.48rem) * 1.389));
-//     }
-//     .italic {
-//         font-size: calc(70% + ((1vw - 1rem) * 0.486));
-//     }
-//     a.btn-sharp {
-//         font-size: calc(70% + ((1vw - 0.48rem) * 0.486));
-//     }
-// }

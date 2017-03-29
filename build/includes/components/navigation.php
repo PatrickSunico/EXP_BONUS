@@ -100,11 +100,6 @@
           </li>
         </ul>
       </li>
-
-      <!--<li class="social"><a class="fa fa-twitter" href="#"></a></li>
-      <li class="social"><a class="fa fa-facebook" href="#"></a></li>
-      <li class="social"><a class="fa fa-github" href="#"></a></li>
-      <li class="social"><a class="fa fa-instagram" href="#"></a></li>-->
     </ul>
   </div>
 </nav>
