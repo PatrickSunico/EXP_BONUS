@@ -82,7 +82,7 @@ gulp.task('browser-sync', ['php'], function() {
 // SCSS
 gulp.task('sass', function() {
     return gulp.src(rawPaths.scss)
-        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(rename('main.min.css'))
         .pipe(autoprefixer(gulp_options.browsers))
         .pipe(gulp.dest(out.cssOut))
