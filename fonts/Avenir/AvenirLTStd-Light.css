@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Avenir LT Std 35 Light";
+    src: url("AvenirLTStd-Light.eot"); /* IE9 */
+    src: url("AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("AvenirLTStd-Light.woff") format("woff"), /* chrome, firefox */
+    url("AvenirLTStd-Light.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("AvenirLTStd-Light.svg#Avenir LT Std 35 Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
