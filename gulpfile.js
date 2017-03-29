@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     pump = require('pump'),
     imagemin = require('gulp-imagemin'),
-
+    fontmin = require('gulp-fontmin'),
     // use this only if you need to convert templates into html
     php2html = require('gulp-php2html'),
     php = require('gulp-connect-php');
@@ -22,7 +22,8 @@ var rawPaths = {
     index: './build/*.php',
     php: './build/includes/*.php',
     image: './build/images/**/*.{svg,png,jpeg,jpg,gif}',
-    js: './build/js/*.js'
+    js: './build/js/*.js',
+    fonts: './build/fonts/**/*.{eot,ttf,woff,woff2,svg}'
 };
 
 // Build Out 
@@ -36,7 +37,8 @@ var distOut = {
     index: './dist/', // for php2html conversion
     scss: './dist/css/',
     js: './dist/js/',
-    compressed_images: './dist/images/'
+    compressed_images: './dist/images/',
+    fonts_compressed: './dist/fonts/'
 }
 
 var gulp_options = {
@@ -111,6 +113,14 @@ gulp.task('php2html', function() {
     return gulp.src(rawPaths.index)
         .pipe(php2html())
         .pipe(gulp.dest(distOut.index));
+});
+
+
+// Minify Fonts
+gulp.task('fontmin', function() {
+    return gulp.src(rawPaths.fonts)
+        .pipe(fontmin())
+        .pipe(gulp.dest(distOut.fonts_compressed));
 });
 
 

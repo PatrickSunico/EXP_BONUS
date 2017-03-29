@@ -1,4 +1,3 @@
-
 <!--Main Carousel-->
 <?php 
   function main_carousel() {
@@ -13,7 +12,6 @@
     endforeach;
   }
 ?>
-
 <!--Top Reviews and Recommendations-->
 <?php 
   function carousel_images() {
@@ -62,9 +60,7 @@
     endforeach;
   }
 ?>
-
 <!--Upcoming Releases-->
-
 <?php 
   function upcoming_releases() {
     $resources = file_get_contents("includes/functions/resources/resources.json");
@@ -94,8 +90,6 @@
     endforeach;
   }
 ?>  
-
-
 <!--Indie Releases-->
 <?php 
   function indie_images() {
@@ -124,9 +118,7 @@
     endforeach;
   }
 ?>
-
-
-
+<!--News -->
 <?php 
   function news() {
     $resources = file_get_contents("includes/functions/resources/resources.json");
@@ -157,8 +149,7 @@
     endforeach;
   }
 ?>
-
-
+<!--Trending List-->
 <?php 
   function trending_list() {
     $resources = file_get_contents("includes/functions/resources/resources.json");
