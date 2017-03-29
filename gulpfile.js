@@ -56,7 +56,7 @@ gulp.task('sass', function() {
     return gulp.src(rawPaths.scss)
         .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(rename('main.min.css'))
-        .pipe(autoprefixer(autoprefixerOptions))
+        .pipe(autoprefixer(autoprefixerOptions.browsers))
         .pipe(gulp.dest(out.cssOut));
 });
 

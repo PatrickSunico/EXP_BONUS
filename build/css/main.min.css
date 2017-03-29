@@ -310,9 +310,6 @@ img {
   .h2 {
     font-size: calc(70% + ((1vw - 0.48rem) * 1.389));
   }
-  .h3 {
-    font-size: calc(100% + ((1vw - 1.2rem) * 1.389));
-  }
   .italic {
     font-size: calc(70% + ((1vw - 1rem) * 0.486));
   }
@@ -886,148 +883,6 @@ nav ul li:hover ul {
   }
 }
 
-.top-div {
-  position: relative;
-  z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-
-.non-fb-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  z-index: 9998;
-}
-
-.non-fb-container .discount {
-  background-color: #B8E986;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 8px 6px;
-}
-
-.non-fb-container .price-list {
-  padding: 0 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  background-color: rgba(34, 40, 44, 0.6);
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  box-sizing: border-box;
-}
-
-.non-fb-container .price-list strike {
-  color: #9E9A9A;
-  font-weight: bold;
-  margin: 0 4px;
-}
-
-.bot-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-}
-
-.bot-div .info {
-  background-color: rgba(34, 40, 44, 0.6);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  padding: 10px;
-}
-
-.bot-div .info .h5 {
-  font-weight: bold;
-  color: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.relative-overlay {
-  position: relative;
-  height: 100%;
-  text-align: center;
-  display: block;
-}
-
-.platform {
-  display: block;
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 9997;
-  margin: 0 auto;
-  width: 100%;
-  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-  background-color: rgba(34, 40, 44, 0.8);
-  opacity: 0.75;
-}
-
-.platform:hover {
-  background-color: transparent !important;
-  opacity: 1;
-}
-
-.platform .platform-list {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 800px) {
-  .non-fb-container {
-    position: absolute;
-  }
-  .bot-div .info {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: absolute;
-  }
-}
-
 .two_column_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1329,5 +1184,147 @@ ul.sitemap ul.social li {
   }
   ul.sitemap li {
     padding: 4px 0;
+  }
+}
+
+.top-div {
+  position: relative;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.non-fb-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 9998;
+}
+
+.non-fb-container .discount {
+  background-color: #B8E986;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 6px;
+}
+
+.non-fb-container .price-list {
+  padding: 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: rgba(34, 40, 44, 0.6);
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-box;
+}
+
+.non-fb-container .price-list strike {
+  color: #9E9A9A;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.bot-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.bot-div .info {
+  background-color: rgba(34, 40, 44, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px;
+}
+
+.bot-div .info .h5 {
+  font-weight: bold;
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.relative-overlay {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: block;
+}
+
+.platform {
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9997;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: rgba(34, 40, 44, 0.8);
+  opacity: 0.75;
+}
+
+.platform:hover {
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.platform .platform-list {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 800px) {
+  .non-fb-container {
+    position: absolute;
+  }
+  .bot-div .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
   }
 }
