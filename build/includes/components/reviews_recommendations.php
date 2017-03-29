@@ -19,7 +19,7 @@
               </span>
             </div>
             <!--End Top Div-->
-            <img src="../images/featured_images/feature-1.jpg" alt=""> <!--Image-->
+            <img src="images/featured_images/feature-1.jpg" alt=""> <!--Image-->
             <!--Bottom Div-->
             <div class="bot-div">
               <span class="info">
@@ -46,7 +46,7 @@
                 </span>
               </span>
             </div>
-            <img src="../images/featured_images/feature-2.jpg" alt="image">
+            <img src="images/featured_images/feature-2.jpg" alt="image">
             <div class="bot-div">
               <span class="info">
                 <h5 class="h5">Horizon Zero Dawn</h5>
@@ -69,7 +69,7 @@
               </span>
             </span>
           </div>
-          <img src="../images/featured_images/feature-3.jpg" alt="image">
+          <img src="images/featured_images/feature-3.jpg" alt="image">
           <div class="bot-div">
             <span class="info">
               <h5 class="h5">Dishonored 2</h5>
