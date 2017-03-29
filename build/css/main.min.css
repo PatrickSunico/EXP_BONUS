@@ -1,17 +1,22 @@
+* {
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-:before,
-:after {
-  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -303,21 +308,6 @@ img {
 }
 
 /* 1em @ 48em (640px) increasing to 2em @ 120em (1920px) */
-@media only screen and (min-width: 1200px) {
-  .h1 {
-    font-size: calc(100% + ((1vw - 0.80rem) * 1.389));
-  }
-  .h2 {
-    font-size: calc(70% + ((1vw - 0.48rem) * 1.389));
-  }
-  .italic {
-    font-size: calc(70% + ((1vw - 1rem) * 0.486));
-  }
-  a.btn-sharp {
-    font-size: calc(70% + ((1vw - 0.48rem) * 0.486));
-  }
-}
-
 nav {
   background-color: #353535;
 }
@@ -741,7 +731,7 @@ nav ul li:hover ul {
   opacity: 1;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .item-grp .img-item-sm,
   .item-grp .img-item-lg {
     margin: 0;
@@ -784,7 +774,6 @@ nav ul li:hover ul {
 }
 
 .swiper-container.feature_carousel {
-  box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -1189,7 +1178,7 @@ ul.sitemap ul.social li {
 
 .top-div {
   position: relative;
-  z-index: 9999;
+  z-index: 9998;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1309,14 +1298,18 @@ ul.sitemap ul.social li {
 }
 
 .platform .platform-list {
-  position: relative;
+  position: absolute;
   top: 50%;
+  left: 0;
+  right: 0;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   margin: 0 auto;
+  text-align: center;
+  display: block;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .non-fb-container {
     position: absolute;
   }

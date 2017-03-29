@@ -1,12 +1,13 @@
-// Price Container
+// Top Div Price Container Slides
 .top-div {
     position: relative;
-    z-index: 9999;
+    z-index: 9998;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
+// non flexbox container for swiper slides 
 .non-fb-container {
     position: relative;
     display: flex;
@@ -34,6 +35,7 @@
     }
 }
 
+// Bot Div Info Container for Slides
 .bot-div {
     display: flex;
     flex-direction: row;
@@ -83,25 +85,26 @@
         opacity: 1;
     }
     .platform-list {
-        position: relative;
+        // Browser Compatibility 
+        position: absolute;
         top: 50%;
-        -webkit-transform: translateY(-50%);
+        left: 0;
+        right: 0;
         transform: translateY(-50%);
         margin: 0 auto;
+        text-align: center;
+        display: block;
     }
 }
 
 // End 
 // Limits to Desktop to Medium Large Screens
-@include breakpoint-800-sm {
-    // .top-div {
+@include breakpoint-768-sm {
     .non-fb-container {
         position: absolute;
     }
-    // }
     .bot-div {
         .info {
-            // flex-direction: column;
             flex-direction: row;
             position: absolute;
         }
